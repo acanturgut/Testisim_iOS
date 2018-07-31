@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40BF293893B534E077C7FAE4 /* Pods_testisim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD10851412DB55FEA92966B1 /* Pods_testisim.framework */; };
 		8F8E6E0E2110FC2300BA5C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0D2110FC2300BA5C1B /* AppDelegate.swift */; };
 		8F8E6E102110FC2300BA5C1B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0F2110FC2300BA5C1B /* SplashViewController.swift */; };
 		8F8E6E132110FC2300BA5C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E112110FC2300BA5C1B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43CDFBD4506A7E3DBEBEC1A3 /* Pods-testisim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testisim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testisim/Pods-testisim.debug.xcconfig"; sourceTree = "<group>"; };
 		8F8E6E0A2110FC2300BA5C1B /* testisim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testisim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8E6E0D2110FC2300BA5C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F8E6E0F2110FC2300BA5C1B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8F8E6E1A2110FC2400BA5C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8E6E1C2110FC2400BA5C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F8E6E272111074100BA5C1B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A03B0291EF9E7DA082BC2EAA /* Pods-testisim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testisim.release.xcconfig"; path = "Pods/Target Support Files/Pods-testisim/Pods-testisim.release.xcconfig"; sourceTree = "<group>"; };
+		CD10851412DB55FEA92966B1 /* Pods_testisim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testisim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BF293893B534E077C7FAE4 /* Pods_testisim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C2718C19DF143C55B6A912 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43CDFBD4506A7E3DBEBEC1A3 /* Pods-testisim.debug.xcconfig */,
+				A03B0291EF9E7DA082BC2EAA /* Pods-testisim.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F8E6E012110FC2300BA5C1B = {
 			isa = PBXGroup;
 			children = (
 				8F8E6E0C2110FC2300BA5C1B /* testisim */,
 				8F8E6E0B2110FC2300BA5C1B /* Products */,
+				07C2718C19DF143C55B6A912 /* Pods */,
+				D27413B28AECACFC0BD232A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +118,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		D27413B28AECACFC0BD232A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD10851412DB55FEA92966B1 /* Pods_testisim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F8E6E1F2110FC2400BA5C1B /* Build configuration list for PBXNativeTarget "testisim" */;
 			buildPhases = (
+				51E42E05B95DE00250288379 /* [CP] Check Pods Manifest.lock */,
 				8F8E6E062110FC2300BA5C1B /* Sources */,
 				8F8E6E072110FC2300BA5C1B /* Frameworks */,
 				8F8E6E082110FC2300BA5C1B /* Resources */,
@@ -167,6 +192,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51E42E05B95DE00250288379 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testisim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F8E6E062110FC2300BA5C1B /* Sources */ = {
@@ -318,6 +364,7 @@
 		};
 		8F8E6E202110FC2400BA5C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43CDFBD4506A7E3DBEBEC1A3 /* Pods-testisim.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +383,7 @@
 		};
 		8F8E6E212110FC2400BA5C1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03B0291EF9E7DA082BC2EAA /* Pods-testisim.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
