@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bip-51-Uig">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Ps3-i0-ocO">
+            <objects>
+                <viewController id="agq-PG-iV7" customClass="SplashViewController" customModule="testisim" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JzS-Hx-DLC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-vV-UqR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSplash" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-7u-hi4">
+                                <rect key="frame" x="70.5" y="261.5" width="234" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="7NH-k8-G5m"/>
+                                    <constraint firstAttribute="height" constant="143" id="cXH-sX-SHi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erken teşhis, sağlıklı gençlik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shG-x8-D6f">
+                                <rect key="frame" x="0.0" y="608" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iIY-sR-RIf" firstAttribute="trailing" secondItem="ERN-vV-UqR" secondAttribute="trailing" id="4rq-SC-OQL"/>
+                            <constraint firstItem="ERN-vV-UqR" firstAttribute="top" secondItem="iIY-sR-RIf" secondAttribute="top" id="6FB-Om-8Pa"/>
+                            <constraint firstItem="shG-x8-D6f" firstAttribute="leading" secondItem="iIY-sR-RIf" secondAttribute="leading" id="Eai-Xh-qXZ"/>
+                            <constraint firstItem="Jy8-7u-hi4" firstAttribute="centerX" secondItem="JzS-Hx-DLC" secondAttribute="centerX" id="EkB-nO-9v2"/>
+                            <constraint firstItem="ERN-vV-UqR" firstAttribute="leading" secondItem="iIY-sR-RIf" secondAttribute="leading" id="GmU-nc-qO4"/>
+                            <constraint firstAttribute="trailing" secondItem="shG-x8-D6f" secondAttribute="trailing" id="NWw-xb-nz9"/>
+                            <constraint firstItem="Jy8-7u-hi4" firstAttribute="centerY" secondItem="JzS-Hx-DLC" secondAttribute="centerY" id="Sob-G0-Vc8"/>
+                            <constraint firstItem="iIY-sR-RIf" firstAttribute="bottom" secondItem="ERN-vV-UqR" secondAttribute="bottom" id="UjO-1a-a7X"/>
+                            <constraint firstItem="iIY-sR-RIf" firstAttribute="bottom" secondItem="shG-x8-D6f" secondAttribute="bottom" constant="38" id="dE1-va-aRS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iIY-sR-RIf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xa-oc-ZBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-30"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OK4-ds-x3S">
+            <objects>
+                <viewController id="bip-51-Uig" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D6g-ee-biL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-6P-7dq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="jo8-0Z-IqX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoUfak" translatesAutoresizingMaskIntoConstraints="NO" id="ts0-SN-d5X">
+                                <rect key="frame" x="138.5" y="63" width="97" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="KzJ-V6-6N3"/>
+                                    <constraint firstAttribute="width" constant="97" id="uUp-5G-FgK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-dT-mCo">
+                                <rect key="frame" x="38" y="159" width="299" height="80"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Merhaba,">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
+Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı. Hemen başlayalım…</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSt-yv-WEl" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="60" y="402" width="255" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="58f-p0-Hat"/>
+                                    <constraint firstAttribute="width" constant="255" id="cch-J6-sNT"/>
+                                </constraints>
+                                <state key="normal" title="15-25 YAŞ ARASI">
+                                    <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwA-fe-jX9" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="60" y="492" width="255" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Drq-ZF-Zeq"/>
+                                    <constraint firstAttribute="width" constant="255" id="svb-Vr-abX"/>
+                                </constraints>
+                                <state key="normal" title="25- 35 YAŞ ARASI">
+                                    <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaşınız hangi aralıkta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14c-n2-B0J">
+                                <rect key="frame" x="16" y="324" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.32941176470588235" green="0.45490196078431372" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZl-Qm-S7f" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="60" y="582" width="255" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="KjY-QT-q5y"/>
+                                    <constraint firstAttribute="width" constant="255" id="ReO-g4-dAD"/>
+                                </constraints>
+                                <state key="normal" title="35 YAŞ ÜSTÜ">
+                                    <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FZl-Qm-S7f" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="4ip-vS-ivk"/>
+                            <constraint firstItem="pK6-dT-mCo" firstAttribute="top" secondItem="ts0-SN-d5X" secondAttribute="bottom" constant="37" id="5Yz-sz-TGY"/>
+                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="pK6-dT-mCo" secondAttribute="trailing" constant="38" id="7Ch-LD-70q"/>
+                            <constraint firstItem="eSt-yv-WEl" firstAttribute="top" secondItem="14c-n2-B0J" secondAttribute="bottom" constant="49" id="8a2-3c-gXP"/>
+                            <constraint firstItem="pwA-fe-jX9" firstAttribute="top" secondItem="eSt-yv-WEl" secondAttribute="bottom" constant="25" id="Bf7-JG-BMR"/>
+                            <constraint firstItem="14c-n2-B0J" firstAttribute="top" secondItem="cmb-6P-7dq" secondAttribute="bottom" constant="39" id="Msu-b6-B8Q"/>
+                            <constraint firstItem="cmb-6P-7dq" firstAttribute="top" secondItem="D6g-ee-biL" secondAttribute="top" id="PbP-GD-MTa"/>
+                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="cmb-6P-7dq" secondAttribute="trailing" id="QNk-13-77G"/>
+                            <constraint firstItem="pK6-dT-mCo" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" constant="38" id="S2o-TS-0IZ"/>
+                            <constraint firstItem="pwA-fe-jX9" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="VXs-gc-pAB"/>
+                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="14c-n2-B0J" secondAttribute="trailing" constant="16" id="iey-tR-biW"/>
+                            <constraint firstItem="ts0-SN-d5X" firstAttribute="top" secondItem="GRw-Oc-BEB" secondAttribute="top" constant="43" id="j7z-Hl-LRY"/>
+                            <constraint firstItem="pK6-dT-mCo" firstAttribute="top" secondItem="cmb-6P-7dq" secondAttribute="bottom" constant="-126" id="joj-3k-cCH"/>
+                            <constraint firstItem="14c-n2-B0J" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" constant="16" id="mMt-cI-dgV"/>
+                            <constraint firstItem="FZl-Qm-S7f" firstAttribute="top" secondItem="pwA-fe-jX9" secondAttribute="bottom" constant="25" id="mmE-jA-fwt"/>
+                            <constraint firstItem="ts0-SN-d5X" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="oGh-ON-M4t"/>
+                            <constraint firstItem="cmb-6P-7dq" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" id="pq2-oi-0TK"/>
+                            <constraint firstItem="eSt-yv-WEl" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="yHu-XU-paT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GRw-Oc-BEB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ynj-fK-RRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="686.80659670164926"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="coolBackground" width="375" height="285"/>
+        <image name="logoSplash" width="234" height="143"/>
+        <image name="logoUfak" width="97" height="59"/>
+    </resources>
+</document>

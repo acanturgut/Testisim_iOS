@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8F8E6E0E2110FC2300BA5C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0D2110FC2300BA5C1B /* AppDelegate.swift */; };
-		8F8E6E102110FC2300BA5C1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0F2110FC2300BA5C1B /* ViewController.swift */; };
+		8F8E6E102110FC2300BA5C1B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0F2110FC2300BA5C1B /* SplashViewController.swift */; };
 		8F8E6E132110FC2300BA5C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E112110FC2300BA5C1B /* Main.storyboard */; };
 		8F8E6E162110FC2300BA5C1B /* testisim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E142110FC2300BA5C1B /* testisim.xcdatamodeld */; };
 		8F8E6E182110FC2400BA5C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E172110FC2400BA5C1B /* Assets.xcassets */; };
 		8F8E6E1B2110FC2400BA5C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E192110FC2400BA5C1B /* LaunchScreen.storyboard */; };
+		8F8E6E282111074100BA5C1B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E272111074100BA5C1B /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F8E6E0A2110FC2300BA5C1B /* testisim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testisim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8E6E0D2110FC2300BA5C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F8E6E0F2110FC2300BA5C1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F8E6E0F2110FC2300BA5C1B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		8F8E6E122110FC2300BA5C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F8E6E152110FC2300BA5C1B /* testisim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testisim.xcdatamodel; sourceTree = "<group>"; };
 		8F8E6E172110FC2400BA5C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F8E6E1A2110FC2400BA5C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8E6E1C2110FC2400BA5C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8E6E272111074100BA5C1B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		8F8E6E0C2110FC2300BA5C1B /* testisim */ = {
 			isa = PBXGroup;
 			children = (
+				8F8E6E262110FC5C00BA5C1B /* Storyboards */,
+				8F8E6E252110FC5700BA5C1B /* Views */,
+				8F8E6E242110FC4F00BA5C1B /* Controllers */,
+				8F8E6E232110FC3F00BA5C1B /* Supporting Files */,
+			);
+			path = testisim;
+			sourceTree = "<group>";
+		};
+		8F8E6E232110FC3F00BA5C1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				8F8E6E0D2110FC2300BA5C1B /* AppDelegate.swift */,
-				8F8E6E0F2110FC2300BA5C1B /* ViewController.swift */,
-				8F8E6E112110FC2300BA5C1B /* Main.storyboard */,
 				8F8E6E172110FC2400BA5C1B /* Assets.xcassets */,
-				8F8E6E192110FC2400BA5C1B /* LaunchScreen.storyboard */,
 				8F8E6E1C2110FC2400BA5C1B /* Info.plist */,
 				8F8E6E142110FC2300BA5C1B /* testisim.xcdatamodeld */,
 			);
-			path = testisim;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F8E6E242110FC4F00BA5C1B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E6E0F2110FC2300BA5C1B /* SplashViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F8E6E252110FC5700BA5C1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E6E272111074100BA5C1B /* RoundedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F8E6E262110FC5C00BA5C1B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E6E112110FC2300BA5C1B /* Main.storyboard */,
+				8F8E6E192110FC2400BA5C1B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8E6E162110FC2300BA5C1B /* testisim.xcdatamodeld in Sources */,
-				8F8E6E102110FC2300BA5C1B /* ViewController.swift in Sources */,
+				8F8E6E102110FC2300BA5C1B /* SplashViewController.swift in Sources */,
 				8F8E6E0E2110FC2300BA5C1B /* AppDelegate.swift in Sources */,
+				8F8E6E282111074100BA5C1B /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HWJNCF3Y3;
-				INFOPLIST_FILE = testisim/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testisim/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HWJNCF3Y3;
-				INFOPLIST_FILE = testisim/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testisim/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
