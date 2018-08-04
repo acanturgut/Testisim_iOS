@@ -294,7 +294,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="2Yr-ib-cLh" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="C7P-df-qOL"/>
+                                    <segue destination="2lL-jy-7gI" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="vkB-sX-hX1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-bk-aLH">
@@ -346,7 +346,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lv5-iI-xuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="2577.6611694152925"/>
+            <point key="canvasLocation" x="-930" y="2578"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VVm-fo-bKn">
@@ -726,7 +726,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </constraints>
                                 <state key="normal" title="Button" image="back"/>
                                 <connections>
-                                    <segue destination="o7v-Rk-A6M" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="a9y-Mw-knv"/>
+                                    <segue destination="2lL-jy-7gI" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="Jic-Ju-jGS"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-1j-iuM">
@@ -929,6 +929,110 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             </objects>
             <point key="canvasLocation" x="2209" y="2578"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Vfm-ya-AFY">
+            <objects>
+                <viewController id="2lL-jy-7gI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWd-c8-QhF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-Py-Z7L">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="myn-CY-APd"/>
+                                    <constraint firstAttribute="width" constant="12" id="ouX-Ey-hbg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="o7v-Rk-A6M" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="OBl-vQ-C6x"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="1Nx-9T-QNL">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Fey-aU-bQL"/>
+                                    <constraint firstAttribute="height" constant="27" id="haR-do-CaB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomGreen" translatesAutoresizingMaskIntoConstraints="NO" id="iNW-SF-dWo">
+                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="WDE-on-32n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-Tg-9Hr">
+                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKP-Za-32v" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="hBg-Ci-MF5"/>
+                                    <constraint firstAttribute="height" constant="55" id="rip-EZ-55g"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2Yr-ib-cLh" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="ocf-jQ-QeD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CCy-DO-KO5">
+                                <rect key="frame" x="16" y="382" width="343" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="roF-Wa-jWO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Yıllarca hayatını şakalar üzerine kuran komedyen Tom Green’ e 2000 yılında testis kanseri teşhisi koyuldu. Geçirdiği cerrahi operasyonlar sonrasında sağlığına kavuştu. Halen, testis kanseri hakkında farkındalığı arttırmaya yönelik gösteriler düzenliyor. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CCy-DO-KO5" firstAttribute="leading" secondItem="dgP-jJ-TmP" secondAttribute="leading" constant="16" id="18M-zg-I8n"/>
+                            <constraint firstItem="iNW-SF-dWo" firstAttribute="leading" secondItem="dgP-jJ-TmP" secondAttribute="leading" id="5oM-qk-b2z"/>
+                            <constraint firstItem="lM9-Py-Z7L" firstAttribute="top" secondItem="dgP-jJ-TmP" secondAttribute="top" constant="16" id="8Sm-fk-3Eo"/>
+                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="trailing" secondItem="CCy-DO-KO5" secondAttribute="trailing" constant="16" id="ASA-YM-vgH"/>
+                            <constraint firstItem="iNW-SF-dWo" firstAttribute="trailing" secondItem="dgP-jJ-TmP" secondAttribute="trailing" id="Fz5-K0-9ez"/>
+                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="trailing" secondItem="tKd-Tg-9Hr" secondAttribute="trailing" constant="16" id="HpS-O9-wSR"/>
+                            <constraint firstItem="1Nx-9T-QNL" firstAttribute="centerX" secondItem="IWd-c8-QhF" secondAttribute="centerX" id="PYL-3c-Ftb"/>
+                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="bottom" secondItem="eKP-Za-32v" secondAttribute="bottom" constant="32" id="Rwd-ME-Nw7"/>
+                            <constraint firstItem="1Nx-9T-QNL" firstAttribute="top" secondItem="dgP-jJ-TmP" secondAttribute="top" constant="16" id="TAB-bu-5iU"/>
+                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="trailing" secondItem="eKP-Za-32v" secondAttribute="trailing" constant="32" id="Ykc-Uy-HFe"/>
+                            <constraint firstItem="tKd-Tg-9Hr" firstAttribute="top" secondItem="iNW-SF-dWo" secondAttribute="bottom" constant="2" id="abt-sT-Ub2"/>
+                            <constraint firstItem="iNW-SF-dWo" firstAttribute="top" secondItem="1Nx-9T-QNL" secondAttribute="bottom" constant="18" id="cLW-ck-FqM"/>
+                            <constraint firstItem="tKd-Tg-9Hr" firstAttribute="leading" secondItem="dgP-jJ-TmP" secondAttribute="leading" constant="16" id="dW3-80-0Jf"/>
+                            <constraint firstItem="CCy-DO-KO5" firstAttribute="top" secondItem="tKd-Tg-9Hr" secondAttribute="bottom" constant="23" id="kwK-xe-que"/>
+                            <constraint firstItem="lM9-Py-Z7L" firstAttribute="leading" secondItem="dgP-jJ-TmP" secondAttribute="leading" constant="16" id="wnr-HL-ypi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dgP-jJ-TmP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zz-ox-2rI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="2578"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arjen" width="375" height="259"/>
@@ -941,11 +1045,13 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <image name="logoSplash" width="234" height="143"/>
         <image name="logoUfak" width="97" height="59"/>
         <image name="taboo" width="375" height="250"/>
+        <image name="tomGreen" width="375" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ilu-v7-Cf0"/>
-        <segue reference="a9y-Mw-knv"/>
-        <segue reference="qSy-z9-TF0"/>
+        <segue reference="Jic-Ju-jGS"/>
+        <segue reference="ocf-jQ-QeD"/>
+        <segue reference="OBl-vQ-C6x"/>
+        <segue reference="piz-Pa-vrg"/>
         <segue reference="PJ3-39-sjb"/>
     </inferredMetricsTieBreakers>
 </document>
