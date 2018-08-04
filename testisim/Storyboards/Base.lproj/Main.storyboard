@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agq-PG-iV7">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,21 @@
             <objects>
                 <viewController id="agq-PG-iV7" customClass="SplashViewController" customModule="testisim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JzS-Hx-DLC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-vV-UqR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSplash" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-7u-hi4">
-                                <rect key="frame" x="70.5" y="261.5" width="234" height="143"/>
+                                <rect key="frame" x="43" y="212.5" width="234" height="143"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="7NH-k8-G5m"/>
                                     <constraint firstAttribute="height" constant="143" id="cXH-sX-SHi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erken teşhis, sağlıklı gençlik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shG-x8-D6f">
-                                <rect key="frame" x="0.0" y="608" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="509" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -63,40 +63,40 @@
             <objects>
                 <viewController id="bip-51-Uig" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D6g-ee-biL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-R2-dih">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="285" id="F1g-ws-ZOj"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoUfak" translatesAutoresizingMaskIntoConstraints="NO" id="ts0-SN-d5X">
-                                <rect key="frame" x="139" y="59" width="97" height="59"/>
+                                <rect key="frame" x="111.5" y="59" width="97" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="tXs-fC-NGR"/>
                                     <constraint firstAttribute="width" constant="97" id="uUp-5G-FgK"/>
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-Nj-7PE">
-                                <rect key="frame" x="0.0" y="285" width="375" height="382"/>
+                                <rect key="frame" x="0.0" y="285" width="320" height="283"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-aL-XFK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="382"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="382"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="382" id="XgL-9b-m79"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaşınız hangi aralıkta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkt-2F-J8O">
-                                        <rect key="frame" x="16" y="39" width="343" height="29"/>
+                                        <rect key="frame" x="16" y="39" width="288" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kS-Qc-nAQ" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                        <rect key="frame" x="66" y="106" width="243" height="55"/>
+                                        <rect key="frame" x="66" y="106" width="188" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="9Mp-Ez-31e"/>
                                         </constraints>
@@ -119,7 +119,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-2K-cqv" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                        <rect key="frame" x="66" y="186" width="243" height="55"/>
+                                        <rect key="frame" x="66" y="186" width="188" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="atY-dB-YMB"/>
                                         </constraints>
@@ -142,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6J-0S-O1D" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                        <rect key="frame" x="66" y="266" width="243" height="55"/>
+                                        <rect key="frame" x="66" y="266" width="188" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="Lat-3T-gZN"/>
                                         </constraints>
@@ -187,7 +187,7 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-dT-mCo">
-                                <rect key="frame" x="16" y="149" width="343" height="80"/>
+                                <rect key="frame" x="16" y="149" width="288" height="80"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Merhaba,">
                                         <attributes>
@@ -231,50 +231,541 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             </objects>
             <point key="canvasLocation" x="244" y="686.80659670164926"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Menu View Controller-->
         <scene sceneID="wHl-gz-ADv">
             <objects>
-                <viewController id="emy-Ne-H0u" sceneMemberID="viewController">
+                <viewController id="emy-Ne-H0u" customClass="MainMenuViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tho-9W-59w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-H3-e0a">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBK-fM-3Sc">
+                                <rect key="frame" x="215" y="358" width="89" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sesle Çalıştır" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-jh-4n8">
+                                        <rect key="frame" x="2" y="48" width="85" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npSymptom" translatesAutoresizingMaskIntoConstraints="NO" id="awc-bS-Q2Y">
+                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="MeO-Hw-Tya"/>
+                                            <constraint firstAttribute="height" constant="30" id="nBn-mf-7oJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="awc-bS-Q2Y" firstAttribute="top" secondItem="lBK-fM-3Sc" secondAttribute="top" constant="10" id="0Ea-B9-um2"/>
+                                    <constraint firstItem="Oef-jh-4n8" firstAttribute="leading" secondItem="lBK-fM-3Sc" secondAttribute="leading" constant="2" id="FIa-4y-t5D"/>
+                                    <constraint firstAttribute="height" constant="74" id="PHm-UX-DJh"/>
+                                    <constraint firstAttribute="width" constant="89" id="Wwe-0z-TEo"/>
+                                    <constraint firstItem="awc-bS-Q2Y" firstAttribute="centerX" secondItem="lBK-fM-3Sc" secondAttribute="centerX" id="hko-y6-gjk"/>
+                                    <constraint firstItem="Oef-jh-4n8" firstAttribute="top" secondItem="awc-bS-Q2Y" secondAttribute="bottom" constant="8" id="kf0-5D-ft9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oef-jh-4n8" secondAttribute="trailing" constant="2" id="laY-46-GpT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-i8-ten">
+                                <rect key="frame" x="116" y="358" width="89" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww9-Mo-3e2">
+                                        <rect key="frame" x="2" y="48" width="85" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npCheckList" translatesAutoresizingMaskIntoConstraints="NO" id="DDS-0b-wW5">
+                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="q6x-ZO-XKK"/>
+                                            <constraint firstAttribute="height" constant="30" id="tJq-zL-RR4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="6Td-E8-COk"/>
+                                    <constraint firstAttribute="trailing" secondItem="ww9-Mo-3e2" secondAttribute="trailing" constant="2" id="6sN-Os-G2d"/>
+                                    <constraint firstAttribute="height" constant="74" id="J9l-R7-qDr"/>
+                                    <constraint firstItem="DDS-0b-wW5" firstAttribute="top" secondItem="Mq5-i8-ten" secondAttribute="top" constant="10" id="Jdm-oK-Zam"/>
+                                    <constraint firstItem="ww9-Mo-3e2" firstAttribute="leading" secondItem="Mq5-i8-ten" secondAttribute="leading" constant="2" id="P7s-VD-R38"/>
+                                    <constraint firstItem="DDS-0b-wW5" firstAttribute="centerX" secondItem="Mq5-i8-ten" secondAttribute="centerX" id="b2G-lh-ft7"/>
+                                    <constraint firstItem="ww9-Mo-3e2" firstAttribute="top" secondItem="DDS-0b-wW5" secondAttribute="bottom" constant="8" id="c2w-87-M27"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYE-qk-jBQ">
+                                <rect key="frame" x="16" y="440" width="288" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.33318661971830987" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Xja-Eh-VFB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-fc-juK">
+                                <rect key="frame" x="116" y="449" width="89" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sözlük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwa-6V-z4o">
+                                        <rect key="frame" x="5" y="48" width="79" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npBook" translatesAutoresizingMaskIntoConstraints="NO" id="gFe-2y-gxC">
+                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="GKO-iH-rvK"/>
+                                            <constraint firstAttribute="height" constant="30" id="Pzu-qA-Gsd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fwa-6V-z4o" firstAttribute="leading" secondItem="9Pe-fc-juK" secondAttribute="leading" constant="5" id="1nl-un-H1Z"/>
+                                    <constraint firstAttribute="height" constant="74" id="4gU-bu-DBp"/>
+                                    <constraint firstItem="gFe-2y-gxC" firstAttribute="centerX" secondItem="9Pe-fc-juK" secondAttribute="centerX" id="boH-Ox-DGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fwa-6V-z4o" secondAttribute="trailing" constant="5" id="e0b-4l-4nW"/>
+                                    <constraint firstAttribute="width" constant="89" id="jAt-Dq-lr9"/>
+                                    <constraint firstItem="gFe-2y-gxC" firstAttribute="top" secondItem="9Pe-fc-juK" secondAttribute="top" constant="10" id="sqe-RE-XcB"/>
+                                    <constraint firstItem="fwa-6V-z4o" firstAttribute="top" secondItem="gFe-2y-gxC" secondAttribute="bottom" constant="8" id="tkf-P3-cha"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npShare" translatesAutoresizingMaskIntoConstraints="NO" id="G8F-ux-Ue5">
+                                <rect key="frame" x="16" y="36" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dbm-lB-jVH"/>
+                                    <constraint firstAttribute="width" constant="30" id="wuJ-HU-yhx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npSettings" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-03-1md">
+                                <rect key="frame" x="274" y="36" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LGd-sp-jkQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="Y63-I2-WOx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoUfak" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-xp-4C1">
+                                <rect key="frame" x="60" y="60" width="200" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Fbm-nz-geb"/>
+                                    <constraint firstAttribute="height" priority="700" constant="66" id="Vw7-bl-HDJ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEP-Nf-7Bz" customClass="RoundedView" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="16" y="134" width="288" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri erken teşhis ile yaklaşık %100 oranında iyileşme sağlanabilir. Testlerinizi aksatmayın, kafanız rahat olsun :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XY4-QM-LXO">
+                                        <rect key="frame" x="8" y="8" width="272" height="107"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99404761904761907" green="0.98809523809523814" blue="1" alpha="0.32696963028169013" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XY4-QM-LXO" secondAttribute="bottom" constant="8" id="951-Dl-6Ml"/>
+                                    <constraint firstItem="XY4-QM-LXO" firstAttribute="top" secondItem="fEP-Nf-7Bz" secondAttribute="top" constant="8" id="Rh4-hh-LCA"/>
+                                    <constraint firstAttribute="trailing" secondItem="XY4-QM-LXO" secondAttribute="trailing" constant="8" id="SG4-AW-Ccu"/>
+                                    <constraint firstItem="XY4-QM-LXO" firstAttribute="leading" secondItem="fEP-Nf-7Bz" secondAttribute="leading" constant="8" id="m57-Yg-R5B"/>
+                                    <constraint firstAttribute="height" constant="123" id="qDG-5T-aRC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQJ-nG-FXb">
+                                <rect key="frame" x="48" y="273" width="225" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="S66-Vb-oke"/>
+                                    <constraint firstAttribute="height" constant="71" id="eTc-gk-kff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Teste Başla" backgroundImage="buton">
+                                    <color key="titleColor" red="0.65490196078431373" green="0.45490196078431372" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJC-qo-3ob">
+                                <rect key="frame" x="16" y="358" width="89" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3D  Görsel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBS-Ln-aCL">
+                                        <rect key="frame" x="5" y="48" width="79" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npBox" translatesAutoresizingMaskIntoConstraints="NO" id="WjB-oJ-kBo">
+                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3HJ-rt-RTj"/>
+                                            <constraint firstAttribute="width" constant="30" id="gJK-2z-9jn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="4ZU-gb-SMv"/>
+                                    <constraint firstItem="WjB-oJ-kBo" firstAttribute="centerX" secondItem="gJC-qo-3ob" secondAttribute="centerX" id="Cug-37-NIY"/>
+                                    <constraint firstAttribute="trailing" secondItem="LBS-Ln-aCL" secondAttribute="trailing" constant="5" id="FWt-GM-OhJ"/>
+                                    <constraint firstItem="LBS-Ln-aCL" firstAttribute="top" secondItem="WjB-oJ-kBo" secondAttribute="bottom" constant="8" id="HEf-2f-uMA"/>
+                                    <constraint firstAttribute="width" constant="89" id="R5j-h4-NpE"/>
+                                    <constraint firstItem="LBS-Ln-aCL" firstAttribute="leading" secondItem="gJC-qo-3ob" secondAttribute="leading" constant="5" id="TbH-q3-pge"/>
+                                    <constraint firstItem="WjB-oJ-kBo" firstAttribute="top" secondItem="gJC-qo-3ob" secondAttribute="top" constant="10" id="cJN-5I-Uz6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-nr-Wuk">
+                                <rect key="frame" x="16" y="449" width="89" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belirtileri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-SP-9Kf">
+                                        <rect key="frame" x="2" y="48" width="85" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npSymptom" translatesAutoresizingMaskIntoConstraints="NO" id="5aB-6x-dx7">
+                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="0vW-1X-MhK"/>
+                                            <constraint firstAttribute="height" constant="30" id="wyu-Oy-ikO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="ApA-9m-Uqs"/>
+                                    <constraint firstItem="5aB-6x-dx7" firstAttribute="centerX" secondItem="OdZ-nr-Wuk" secondAttribute="centerX" id="dNS-9r-gIc"/>
+                                    <constraint firstItem="FsM-SP-9Kf" firstAttribute="leading" secondItem="OdZ-nr-Wuk" secondAttribute="leading" constant="2" id="eh2-Tg-KF7"/>
+                                    <constraint firstItem="5aB-6x-dx7" firstAttribute="top" secondItem="OdZ-nr-Wuk" secondAttribute="top" constant="10" id="hzV-p1-2Q9"/>
+                                    <constraint firstItem="FsM-SP-9Kf" firstAttribute="top" secondItem="5aB-6x-dx7" secondAttribute="bottom" constant="8" id="iCz-Of-tJU"/>
+                                    <constraint firstAttribute="height" constant="74" id="w0r-EA-Zo1"/>
+                                    <constraint firstAttribute="trailing" secondItem="FsM-SP-9Kf" secondAttribute="trailing" constant="2" id="zMd-T2-xga"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir sonraki teste X gün kaldı." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-cT-j13">
+                                <rect key="frame" x="16" y="531" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bbx-k9-Yz6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.84313725490000002" green="0.68235294120000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dS8-yf-UzG">
+                                <rect key="frame" x="215" y="449" width="89" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM1-sG-Lsg">
+                                        <rect key="frame" x="4" y="48" width="81" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npCheckList" translatesAutoresizingMaskIntoConstraints="NO" id="pNJ-05-wOe">
+                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8ND-b2-uzA"/>
+                                            <constraint firstAttribute="width" constant="30" id="bnK-Ch-W0m"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pNJ-05-wOe" firstAttribute="top" secondItem="dS8-yf-UzG" secondAttribute="top" constant="10" id="9W1-qU-UbR"/>
+                                    <constraint firstItem="pNJ-05-wOe" firstAttribute="centerX" secondItem="dS8-yf-UzG" secondAttribute="centerX" id="Eoj-pl-Dr0"/>
+                                    <constraint firstAttribute="height" constant="74" id="Z45-56-hJa"/>
+                                    <constraint firstAttribute="trailing" secondItem="nM1-sG-Lsg" secondAttribute="trailing" constant="4" id="tic-lP-6Kj"/>
+                                    <constraint firstItem="nM1-sG-Lsg" firstAttribute="top" secondItem="pNJ-05-wOe" secondAttribute="bottom" constant="8" id="uZq-WI-v4z"/>
+                                    <constraint firstItem="nM1-sG-Lsg" firstAttribute="leading" secondItem="dS8-yf-UzG" secondAttribute="leading" constant="4" id="uhA-lF-NsI"/>
+                                    <constraint firstAttribute="width" constant="89" id="v7d-7l-Gdj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dcq-cT-j13" firstAttribute="top" secondItem="9Pe-fc-juK" secondAttribute="bottom" constant="8" id="1MX-N9-zII"/>
+                            <constraint firstItem="fYE-qk-jBQ" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="2gh-E1-kA8"/>
+                            <constraint firstItem="ZQJ-nG-FXb" firstAttribute="top" secondItem="fEP-Nf-7Bz" secondAttribute="bottom" constant="16" id="57B-bn-VhL"/>
+                            <constraint firstItem="G8F-ux-Ue5" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="5c1-nx-ghC"/>
+                            <constraint firstItem="HXG-xp-4C1" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="7Ul-kj-cVC"/>
+                            <constraint firstItem="SF4-H3-e0a" firstAttribute="top" secondItem="tho-9W-59w" secondAttribute="top" id="7mI-ua-KpU"/>
+                            <constraint firstItem="Dcq-cT-j13" firstAttribute="top" secondItem="dS8-yf-UzG" secondAttribute="bottom" constant="8" id="8qj-eJ-iui"/>
+                            <constraint firstItem="SF4-H3-e0a" firstAttribute="bottom" secondItem="YQQ-Mr-C6n" secondAttribute="bottom" id="BEw-WQ-SLO"/>
+                            <constraint firstItem="Mq5-i8-ten" firstAttribute="top" secondItem="ZQJ-nG-FXb" secondAttribute="bottom" constant="14" id="CW8-YS-f6S"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="fEP-Nf-7Bz" secondAttribute="trailing" constant="16" id="Cq7-qT-cxP"/>
+                            <constraint firstItem="fEP-Nf-7Bz" firstAttribute="top" secondItem="HXG-xp-4C1" secondAttribute="bottom" constant="8" id="D7x-kS-jzL"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="9ex-03-1md" secondAttribute="trailing" constant="16" id="DPd-uZ-zvP"/>
+                            <constraint firstItem="SF4-H3-e0a" firstAttribute="trailing" secondItem="YQQ-Mr-C6n" secondAttribute="trailing" id="EKu-vs-Nyl"/>
+                            <constraint firstItem="gJC-qo-3ob" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="Nny-yt-S0u"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="fYE-qk-jBQ" secondAttribute="trailing" constant="16" id="OsG-E4-BSo"/>
+                            <constraint firstItem="9Pe-fc-juK" firstAttribute="top" secondItem="fYE-qk-jBQ" secondAttribute="bottom" constant="8" id="SEB-5X-Guc"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="Dcq-cT-j13" secondAttribute="trailing" constant="16" id="U33-Ta-pgE"/>
+                            <constraint firstItem="Mq5-i8-ten" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="V0h-JC-fHr"/>
+                            <constraint firstItem="G8F-ux-Ue5" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="16" id="YAT-cz-ZQS"/>
+                            <constraint firstItem="Dcq-cT-j13" firstAttribute="top" secondItem="OdZ-nr-Wuk" secondAttribute="bottom" constant="8" id="Ytc-lF-3Yh"/>
+                            <constraint firstItem="HXG-xp-4C1" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="40" id="b7z-iI-uQb"/>
+                            <constraint firstItem="9Pe-fc-juK" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="e2J-Fd-hb4"/>
+                            <constraint firstItem="fYE-qk-jBQ" firstAttribute="top" secondItem="lBK-fM-3Sc" secondAttribute="bottom" constant="8" id="fjO-zQ-JzW"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="dS8-yf-UzG" secondAttribute="trailing" constant="16" id="gDK-hf-Jlj"/>
+                            <constraint firstItem="Dcq-cT-j13" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="iec-O3-Af4"/>
+                            <constraint firstItem="9ex-03-1md" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="16" id="n2R-QO-Ja5"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="bottom" secondItem="Dcq-cT-j13" secondAttribute="bottom" constant="16" id="nYl-aH-baw"/>
+                            <constraint firstItem="OdZ-nr-Wuk" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="o28-FC-Kzf"/>
+                            <constraint firstItem="ZQJ-nG-FXb" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="oDp-KD-xTc"/>
+                            <constraint firstItem="fEP-Nf-7Bz" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="uF8-uO-HUk"/>
+                            <constraint firstItem="SF4-H3-e0a" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" id="vJd-YW-IhB"/>
+                            <constraint firstItem="fYE-qk-jBQ" firstAttribute="top" secondItem="Mq5-i8-ten" secondAttribute="bottom" constant="8" id="vRL-gX-Qe7"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="lBK-fM-3Sc" secondAttribute="trailing" constant="16" id="vXZ-bF-ZAO"/>
+                            <constraint firstItem="fYE-qk-jBQ" firstAttribute="top" secondItem="gJC-qo-3ob" secondAttribute="bottom" constant="8" id="zGY-Kc-ZLZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YQQ-Mr-C6n"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bkP-7l-3kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3025" y="687"/>
+            <point key="canvasLocation" x="3521" y="467"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pBy-ee-Hjo">
+            <objects>
+                <viewController id="LMe-DU-9UP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ccJ-vM-Ls6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kcu-f4-XZZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ5-KE-wmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4315" y="251"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PaE-Wd-AVa">
+            <objects>
+                <viewController id="jHM-Cq-lMs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jkn-tk-WBX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kw9-iN-NPI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bu-Cm-dxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5011" y="246"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GNI-uW-uh6">
+            <objects>
+                <viewController id="dIe-SS-6KT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pez-XL-QkO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v4y-s7-Y4E"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lx8-ET-Iw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5692" y="248"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4EW-e4-j54">
+            <objects>
+                <viewController id="VYq-LX-llD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aT1-Hg-TR9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h5w-zN-h3j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQN-Hp-BBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6378" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tu6-wT-k53">
+            <objects>
+                <viewController id="aDf-Mf-Fb9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3A-df-iON">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rda-4e-6aV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7p-My-ftn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7066" y="257"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oh3-qp-jkD">
+            <objects>
+                <viewController id="eXT-rL-f9d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSc-gy-i0j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9ok-dD-RBH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTP-kz-zYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7845" y="626"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iTa-sU-QaF">
+            <objects>
+                <viewController id="8Yr-qp-RNo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzs-c4-ay0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Pl7-6P-YdW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzY-di-cwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7835" y="-104"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yKe-7B-chn">
+            <objects>
+                <viewController id="OSU-ld-HNK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pQz-uL-dUy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wZ6-Ac-5IM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFk-dC-uoz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3531" y="1173"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Piy-zO-2VJ">
+            <objects>
+                <viewController id="QGC-0D-xbr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6va-qh-OiH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AgB-6j-Fs2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYs-zR-Ycj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3539" y="1887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3U7-fV-fx5">
+            <objects>
+                <viewController id="6kL-IK-5gb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nvz-9G-6L7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dhF-h9-ID1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9f-ZS-T9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4250" y="1882"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Amx-Hb-baw">
+            <objects>
+                <viewController id="K7O-m8-FUa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eSS-ng-v9u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WzS-5S-q0n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNT-ZA-nzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4939" y="1882"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kSJ-YL-yNQ">
+            <objects>
+                <viewController id="PnO-LO-vts" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x0K-FH-KqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5Zu-wD-oVf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxP-UI-LyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4233" y="1174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kpe-Zr-lyc">
+            <objects>
+                <viewController id="MsA-hk-e47" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x0s-6P-0Wq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7RA-Cq-92p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gie-rm-j6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4911" y="1169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d9g-po-AGV">
+            <objects>
+                <viewController id="RO5-6o-bYz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGj-34-68c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eHN-xF-8U1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLu-ID-cjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3519" y="-228"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="x7A-MV-dFR">
             <objects>
                 <viewController id="o7v-Rk-A6M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ev-Xq-O7O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="fve-kU-H04">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="cLo-Pl-JGL"/>
                                     <constraint firstAttribute="height" constant="27" id="w4c-MY-Hi7"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arjen" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-IW-tT5">
-                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <rect key="frame" x="0.0" y="81" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="YsU-qA-OAe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-wI-YZW">
-                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <rect key="frame" x="16" y="343" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-Y1-RIV" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="Ige-Xr-Ml8"/>
                                     <constraint firstAttribute="height" constant="55" id="nnZ-O0-hC7"/>
@@ -298,7 +789,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-bk-aLH">
-                                <rect key="frame" x="16" y="382" width="343" height="75"/>
+                                <rect key="frame" x="16" y="382" width="288" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="y8s-80-Wye"/>
                                 </constraints>
@@ -353,7 +844,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="Xf2-oc-2M6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z08-Tq-Yx2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDf-8b-ERy">
@@ -368,27 +859,27 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="BL5-yQ-qkE">
-                                <rect key="frame" x="146" y="123" width="83" height="125"/>
+                                <rect key="frame" x="118.5" y="123" width="83" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="3l8-Le-SLA"/>
                                     <constraint firstAttribute="height" constant="125" id="LbX-VT-zzI"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="c6m-ot-gRC">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="M24-r2-hu7"/>
                                     <constraint firstAttribute="width" constant="44" id="MOB-Uq-Jrn"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-gF-RZT">
-                                <rect key="frame" x="16" y="298" width="343" height="29"/>
+                                <rect key="frame" x="16" y="298" width="288" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bue-pG-YRI" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="61F-Aw-7Ul"/>
                                     <constraint firstAttribute="height" constant="55" id="Ksm-X3-Qw2"/>
@@ -412,7 +903,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1iB-44-mbj">
-                                <rect key="frame" x="16" y="347" width="343" height="99.5"/>
+                                <rect key="frame" x="16" y="347" width="288" height="99.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99.5" id="oSC-OI-Wfy"/>
                                 </constraints>
@@ -466,7 +957,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="4kx-YV-JZJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Mb-kh-gkw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-0E-TC0">
@@ -481,27 +972,27 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-tI-vdh">
-                                <rect key="frame" x="146" y="123" width="83" height="125"/>
+                                <rect key="frame" x="118.5" y="123" width="83" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="4zj-AU-q9m"/>
                                     <constraint firstAttribute="height" constant="125" id="WwO-eJ-C2q"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="5eq-k4-nKN">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="OYy-yT-1UW"/>
                                     <constraint firstAttribute="width" constant="44" id="djc-ru-MyA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkl-3C-dNU">
-                                <rect key="frame" x="16" y="298" width="343" height="29"/>
+                                <rect key="frame" x="16" y="298" width="288" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4H-VS-bzg" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="OD2-Jh-uVF"/>
                                     <constraint firstAttribute="height" constant="55" id="jLK-Fd-HnE"/>
@@ -525,7 +1016,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JbK-QM-01k">
-                                <rect key="frame" x="16" y="347" width="343" height="80"/>
+                                <rect key="frame" x="16" y="347" width="288" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="UdS-HR-833"/>
                                 </constraints>
@@ -585,7 +1076,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="YMF-oB-Wsn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UOD-uz-tMn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emK-cq-iAs">
@@ -600,27 +1091,27 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-T5-Q8Q">
-                                <rect key="frame" x="146" y="123" width="83" height="125"/>
+                                <rect key="frame" x="118.5" y="123" width="83" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="ZIf-pf-rMh"/>
                                     <constraint firstAttribute="width" constant="83" id="ipp-Tx-PC9"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="lPd-wW-kM8">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="JSc-oJ-328"/>
                                     <constraint firstAttribute="width" constant="44" id="St7-mN-dKF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OU-2s-aJy">
-                                <rect key="frame" x="16" y="298" width="343" height="29"/>
+                                <rect key="frame" x="16" y="298" width="288" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-pl-HBB" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="BEp-Ky-4w7"/>
                                     <constraint firstAttribute="height" constant="55" id="NaV-iN-ds0"/>
@@ -644,7 +1135,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-Ae-lvJ">
-                                <rect key="frame" x="16" y="347" width="343" height="80.5"/>
+                                <rect key="frame" x="16" y="347" width="288" height="80.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80.5" id="Z7h-h2-wbZ"/>
                                 </constraints>
@@ -715,7 +1206,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="2Yr-ib-cLh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZM-ix-bOq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-e3-umF">
@@ -730,26 +1221,26 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-1j-iuM">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="A90-kF-bpS"/>
                                     <constraint firstAttribute="width" constant="44" id="pgr-H8-J6t"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armStrong" translatesAutoresizingMaskIntoConstraints="NO" id="0oh-fw-gJr">
-                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <rect key="frame" x="0.0" y="81" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="YHX-Lm-kvu"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-OD-u1U">
-                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <rect key="frame" x="16" y="343" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71B-Z0-AdX" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="UMD-NQ-746"/>
                                     <constraint firstAttribute="width" constant="125" id="cfV-Sd-kjY"/>
@@ -773,7 +1264,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fCt-wn-pCG">
-                                <rect key="frame" x="16" y="382" width="343" height="94"/>
+                                <rect key="frame" x="16" y="382" width="288" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="Wqf-Cg-QXV"/>
                                 </constraints>
@@ -830,7 +1321,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="Bmj-aD-H6a" customClass="EndTutorialViewController" customModule="testisim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eg6-21-x16">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9P-bl-Z2C">
@@ -845,26 +1336,26 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-Vl-Y9r">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="4rX-e1-xrR"/>
                                     <constraint firstAttribute="height" constant="27" id="AlZ-2P-yBI"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taboo" translatesAutoresizingMaskIntoConstraints="NO" id="Xpt-TI-DlC">
-                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <rect key="frame" x="0.0" y="81" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="wwx-eo-T7P"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-X9-HXI">
-                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <rect key="frame" x="16" y="343" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-Dj-a5P" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Lpa-MN-tzD"/>
                                     <constraint firstAttribute="width" constant="125" id="mn3-oE-09p"/>
@@ -888,7 +1379,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-sb-Pcn">
-                                <rect key="frame" x="16" y="382" width="343" height="82"/>
+                                <rect key="frame" x="16" y="382" width="288" height="98"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Jamie ‘Taboo’ Gomez’ e 2014 yılında testis kanseri belirtilerinin ortaya çıkmasının ardından testis kanseri teşhisi koyuldu. Tanı koyulduğunda kanser yayılmış olduğu için cerrahi operasyon ve kemoterapi tedavisi gördü. Şuanda tamamıyla iyileşti.</string>
@@ -934,7 +1425,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="2lL-jy-7gI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWd-c8-QhF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-Py-Z7L">
@@ -949,26 +1440,26 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="1Nx-9T-QNL">
-                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="Fey-aU-bQL"/>
                                     <constraint firstAttribute="height" constant="27" id="haR-do-CaB"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomGreen" translatesAutoresizingMaskIntoConstraints="NO" id="iNW-SF-dWo">
-                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <rect key="frame" x="0.0" y="81" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="WDE-on-32n"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-Tg-9Hr">
-                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <rect key="frame" x="16" y="343" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKP-Za-32v" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <rect key="frame" x="163" y="481" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="hBg-Ci-MF5"/>
                                     <constraint firstAttribute="height" constant="55" id="rip-EZ-55g"/>
@@ -992,7 +1483,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CCy-DO-KO5">
-                                <rect key="frame" x="16" y="382" width="343" height="94"/>
+                                <rect key="frame" x="16" y="382" width="288" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="roF-Wa-jWO"/>
                                 </constraints>
@@ -1039,19 +1530,26 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <image name="armStrong" width="375" height="250"/>
         <image name="back" width="12" height="21"/>
         <image name="background" width="375" height="667"/>
+        <image name="buton" width="241" height="71"/>
         <image name="coolBackground" width="375" height="285"/>
         <image name="kanser" width="83" height="125"/>
         <image name="logoHeader" width="44" height="27"/>
         <image name="logoSplash" width="234" height="143"/>
         <image name="logoUfak" width="97" height="59"/>
+        <image name="npBook" width="36" height="39"/>
+        <image name="npBox" width="37" height="39"/>
+        <image name="npCheckList" width="40" height="32"/>
+        <image name="npSettings" width="36" height="36"/>
+        <image name="npShare" width="36" height="36"/>
+        <image name="npSymptom" width="36" height="39"/>
         <image name="taboo" width="375" height="250"/>
         <image name="tomGreen" width="375" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Jic-Ju-jGS"/>
         <segue reference="ocf-jQ-QeD"/>
-        <segue reference="OBl-vQ-C6x"/>
+        <segue reference="Ddi-Zx-FO0"/>
         <segue reference="piz-Pa-vrg"/>
-        <segue reference="PJ3-39-sjb"/>
+        <segue reference="5aM-Xd-WF2"/>
     </inferredMetricsTieBreakers>
 </document>
