@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bip-51-Uig">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agq-PG-iV7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,10 +49,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iIY-sR-RIf"/>
                     </view>
+                    <connections>
+                        <segue destination="bip-51-Uig" kind="presentation" identifier="segueSplashToTutorial" modalTransitionStyle="crossDissolve" id="PJ3-39-sjb"/>
+                        <segue destination="emy-Ne-H0u" kind="presentation" identifier="segueSplashToMainMenu" modalTransitionStyle="crossDissolve" id="piz-Pa-vrg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Xa-oc-ZBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="-30"/>
+            <point key="canvasLocation" x="244" y="-85"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OK4-ds-x3S">
@@ -62,21 +66,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-6P-7dq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-R2-dih">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="285" id="jo8-0Z-IqX"/>
+                                    <constraint firstAttribute="height" constant="285" id="F1g-ws-ZOj"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoUfak" translatesAutoresizingMaskIntoConstraints="NO" id="ts0-SN-d5X">
-                                <rect key="frame" x="138.5" y="63" width="97" height="59"/>
+                                <rect key="frame" x="139" y="59" width="97" height="59"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="KzJ-V6-6N3"/>
+                                    <constraint firstAttribute="height" constant="59" id="tXs-fC-NGR"/>
                                     <constraint firstAttribute="width" constant="97" id="uUp-5G-FgK"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-Nj-7PE">
+                                <rect key="frame" x="0.0" y="285" width="375" height="382"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-aL-XFK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="382"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="382" id="XgL-9b-m79"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaşınız hangi aralıkta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkt-2F-J8O">
+                                        <rect key="frame" x="16" y="39" width="343" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kS-Qc-nAQ" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="106" width="243" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="9Mp-Ez-31e"/>
+                                        </constraints>
+                                        <state key="normal" title="15-25 YAŞ ARASI">
+                                            <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Xf2-oc-2M6" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="wNj-tZ-bik"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-2K-cqv" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="186" width="243" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="atY-dB-YMB"/>
+                                        </constraints>
+                                        <state key="normal" title="25- 35 YAŞ ARASI">
+                                            <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="4kx-YV-JZJ" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="xax-Wn-bHA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6J-0S-O1D" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="266" width="243" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Lat-3T-gZN"/>
+                                        </constraints>
+                                        <state key="normal" title="35 YAŞ ÜSTÜ">
+                                            <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="YMF-oB-Wsn" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="LFV-jX-o2y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4kS-Qc-nAQ" firstAttribute="top" secondItem="Rkt-2F-J8O" secondAttribute="bottom" constant="38" id="0nA-Tw-nNg"/>
+                                    <constraint firstItem="Rkt-2F-J8O" firstAttribute="leading" secondItem="d3s-Nj-7PE" secondAttribute="leading" constant="16" id="9eP-f0-d45"/>
+                                    <constraint firstAttribute="trailing" secondItem="4kS-Qc-nAQ" secondAttribute="trailing" constant="66" id="Nd2-wU-cHr"/>
+                                    <constraint firstItem="4kS-Qc-nAQ" firstAttribute="leading" secondItem="d3s-Nj-7PE" secondAttribute="leading" constant="66" id="WOs-nq-KXb"/>
+                                    <constraint firstItem="0JL-2K-cqv" firstAttribute="leading" secondItem="d3s-Nj-7PE" secondAttribute="leading" constant="66" id="Wd2-8H-EbP"/>
+                                    <constraint firstItem="e6J-0S-O1D" firstAttribute="leading" secondItem="d3s-Nj-7PE" secondAttribute="leading" constant="66" id="Xae-1z-ksA"/>
+                                    <constraint firstItem="0JL-2K-cqv" firstAttribute="top" secondItem="4kS-Qc-nAQ" secondAttribute="bottom" constant="25" id="aWO-g5-mvA"/>
+                                    <constraint firstAttribute="trailing" secondItem="dlH-aL-XFK" secondAttribute="trailing" id="dtO-E7-d1A"/>
+                                    <constraint firstAttribute="bottom" secondItem="dlH-aL-XFK" secondAttribute="bottom" id="h31-Gx-Sa6"/>
+                                    <constraint firstItem="Rkt-2F-J8O" firstAttribute="top" secondItem="d3s-Nj-7PE" secondAttribute="top" constant="39" id="hr7-pN-dWG"/>
+                                    <constraint firstAttribute="trailing" secondItem="e6J-0S-O1D" secondAttribute="trailing" constant="66" id="jcJ-PN-qky"/>
+                                    <constraint firstAttribute="trailing" secondItem="0JL-2K-cqv" secondAttribute="trailing" constant="66" id="n5a-3N-43w"/>
+                                    <constraint firstItem="dlH-aL-XFK" firstAttribute="height" secondItem="d3s-Nj-7PE" secondAttribute="height" priority="800" id="oCg-fk-CXO"/>
+                                    <constraint firstItem="dlH-aL-XFK" firstAttribute="centerX" secondItem="d3s-Nj-7PE" secondAttribute="centerX" id="oGh-zh-YPP"/>
+                                    <constraint firstItem="dlH-aL-XFK" firstAttribute="leading" secondItem="d3s-Nj-7PE" secondAttribute="leading" id="scP-VM-S4f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rkt-2F-J8O" secondAttribute="trailing" constant="16" id="tSn-vc-cX5"/>
+                                    <constraint firstItem="dlH-aL-XFK" firstAttribute="top" secondItem="d3s-Nj-7PE" secondAttribute="top" id="xlC-LZ-i9L"/>
+                                    <constraint firstItem="e6J-0S-O1D" firstAttribute="top" secondItem="0JL-2K-cqv" secondAttribute="bottom" constant="25" id="yQr-as-bqX"/>
+                                </constraints>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-dT-mCo">
-                                <rect key="frame" x="38" y="159" width="299" height="80"/>
+                                <rect key="frame" x="16" y="149" width="343" height="80"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Merhaba,">
                                         <attributes>
@@ -97,96 +208,21 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSt-yv-WEl" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="60" y="402" width="255" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="58f-p0-Hat"/>
-                                    <constraint firstAttribute="width" constant="255" id="cch-J6-sNT"/>
-                                </constraints>
-                                <state key="normal" title="15-25 YAŞ ARASI">
-                                    <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwA-fe-jX9" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="60" y="492" width="255" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Drq-ZF-Zeq"/>
-                                    <constraint firstAttribute="width" constant="255" id="svb-Vr-abX"/>
-                                </constraints>
-                                <state key="normal" title="25- 35 YAŞ ARASI">
-                                    <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaşınız hangi aralıkta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14c-n2-B0J">
-                                <rect key="frame" x="16" y="324" width="343" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="0.32941176470588235" green="0.45490196078431372" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZl-Qm-S7f" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="60" y="582" width="255" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="KjY-QT-q5y"/>
-                                    <constraint firstAttribute="width" constant="255" id="ReO-g4-dAD"/>
-                                </constraints>
-                                <state key="normal" title="35 YAŞ ÜSTÜ">
-                                    <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FZl-Qm-S7f" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="4ip-vS-ivk"/>
-                            <constraint firstItem="pK6-dT-mCo" firstAttribute="top" secondItem="ts0-SN-d5X" secondAttribute="bottom" constant="37" id="5Yz-sz-TGY"/>
-                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="pK6-dT-mCo" secondAttribute="trailing" constant="38" id="7Ch-LD-70q"/>
-                            <constraint firstItem="eSt-yv-WEl" firstAttribute="top" secondItem="14c-n2-B0J" secondAttribute="bottom" constant="49" id="8a2-3c-gXP"/>
-                            <constraint firstItem="pwA-fe-jX9" firstAttribute="top" secondItem="eSt-yv-WEl" secondAttribute="bottom" constant="25" id="Bf7-JG-BMR"/>
-                            <constraint firstItem="14c-n2-B0J" firstAttribute="top" secondItem="cmb-6P-7dq" secondAttribute="bottom" constant="39" id="Msu-b6-B8Q"/>
-                            <constraint firstItem="cmb-6P-7dq" firstAttribute="top" secondItem="D6g-ee-biL" secondAttribute="top" id="PbP-GD-MTa"/>
-                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="cmb-6P-7dq" secondAttribute="trailing" id="QNk-13-77G"/>
-                            <constraint firstItem="pK6-dT-mCo" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" constant="38" id="S2o-TS-0IZ"/>
-                            <constraint firstItem="pwA-fe-jX9" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="VXs-gc-pAB"/>
-                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="14c-n2-B0J" secondAttribute="trailing" constant="16" id="iey-tR-biW"/>
-                            <constraint firstItem="ts0-SN-d5X" firstAttribute="top" secondItem="GRw-Oc-BEB" secondAttribute="top" constant="43" id="j7z-Hl-LRY"/>
-                            <constraint firstItem="pK6-dT-mCo" firstAttribute="top" secondItem="cmb-6P-7dq" secondAttribute="bottom" constant="-126" id="joj-3k-cCH"/>
-                            <constraint firstItem="14c-n2-B0J" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" constant="16" id="mMt-cI-dgV"/>
-                            <constraint firstItem="FZl-Qm-S7f" firstAttribute="top" secondItem="pwA-fe-jX9" secondAttribute="bottom" constant="25" id="mmE-jA-fwt"/>
-                            <constraint firstItem="ts0-SN-d5X" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="oGh-ON-M4t"/>
-                            <constraint firstItem="cmb-6P-7dq" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" id="pq2-oi-0TK"/>
-                            <constraint firstItem="eSt-yv-WEl" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="yHu-XU-paT"/>
+                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="bottom" secondItem="d3s-Nj-7PE" secondAttribute="bottom" id="5ua-QG-7N5"/>
+                            <constraint firstItem="ts0-SN-d5X" firstAttribute="centerX" secondItem="D6g-ee-biL" secondAttribute="centerX" id="7IB-GY-7LX"/>
+                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="pK6-dT-mCo" secondAttribute="trailing" constant="16" id="C18-1E-fil"/>
+                            <constraint firstItem="GRw-Oc-BEB" firstAttribute="trailing" secondItem="d3s-Nj-7PE" secondAttribute="trailing" id="EJf-99-Cbl"/>
+                            <constraint firstItem="pK6-dT-mCo" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" constant="16" id="Jvz-e7-dmP"/>
+                            <constraint firstItem="7ao-R2-dih" firstAttribute="top" secondItem="D6g-ee-biL" secondAttribute="top" id="LZz-eo-a7h"/>
+                            <constraint firstItem="d3s-Nj-7PE" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" id="PDw-P5-6NM"/>
+                            <constraint firstItem="ts0-SN-d5X" firstAttribute="top" secondItem="GRw-Oc-BEB" secondAttribute="top" constant="39" id="R8j-ch-7fJ"/>
+                            <constraint firstItem="pK6-dT-mCo" firstAttribute="top" secondItem="ts0-SN-d5X" secondAttribute="bottom" constant="31" id="ZNf-Zf-Ybs"/>
+                            <constraint firstItem="7ao-R2-dih" firstAttribute="trailing" secondItem="GRw-Oc-BEB" secondAttribute="trailing" id="bbN-hy-wWp"/>
+                            <constraint firstItem="7ao-R2-dih" firstAttribute="leading" secondItem="GRw-Oc-BEB" secondAttribute="leading" id="hZ6-Ux-UeG"/>
+                            <constraint firstItem="d3s-Nj-7PE" firstAttribute="top" secondItem="7ao-R2-dih" secondAttribute="bottom" id="wI7-rY-QQI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GRw-Oc-BEB"/>
                     </view>
@@ -195,11 +231,721 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             </objects>
             <point key="canvasLocation" x="244" y="686.80659670164926"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wHl-gz-ADv">
+            <objects>
+                <viewController id="emy-Ne-H0u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tho-9W-59w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YQQ-Mr-C6n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkP-7l-3kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025" y="687"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x7A-MV-dFR">
+            <objects>
+                <viewController id="o7v-Rk-A6M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ev-Xq-O7O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="fve-kU-H04">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="cLo-Pl-JGL"/>
+                                    <constraint firstAttribute="height" constant="27" id="w4c-MY-Hi7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arjen" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-IW-tT5">
+                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="YsU-qA-OAe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-wI-YZW">
+                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-Y1-RIV" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Ige-Xr-Ml8"/>
+                                    <constraint firstAttribute="height" constant="55" id="nnZ-O0-hC7"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2Yr-ib-cLh" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="C7P-df-qOL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-bk-aLH">
+                                <rect key="frame" x="16" y="382" width="343" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="y8s-80-Wye"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="2004 yılında testisinde farkettiği bir kitle sonrasında tanı koyulan ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Arjen Robben">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=", geçirdiği cerrahi operasyon sonrasında sağlıklı bir şekilde yaşamına devam ediyor.">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fve-kU-H04" firstAttribute="centerX" secondItem="9Ev-Xq-O7O" secondAttribute="centerX" id="4k5-j3-zgI"/>
+                            <constraint firstItem="fve-kU-H04" firstAttribute="top" secondItem="Rae-Ay-8X9" secondAttribute="top" constant="16" id="6Yp-TX-vcC"/>
+                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="trailing" secondItem="U3n-bk-aLH" secondAttribute="trailing" constant="16" id="6kV-fm-q1v"/>
+                            <constraint firstItem="U3n-bk-aLH" firstAttribute="leading" secondItem="Rae-Ay-8X9" secondAttribute="leading" constant="16" id="9DC-pe-Ead"/>
+                            <constraint firstItem="qDj-wI-YZW" firstAttribute="leading" secondItem="Rae-Ay-8X9" secondAttribute="leading" constant="16" id="CVh-DJ-3T6"/>
+                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="trailing" secondItem="qDj-wI-YZW" secondAttribute="trailing" constant="16" id="Ko4-RB-MHB"/>
+                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="bottom" secondItem="pkO-Y1-RIV" secondAttribute="bottom" constant="32" id="RL4-vh-kSs"/>
+                            <constraint firstItem="qDj-wI-YZW" firstAttribute="top" secondItem="Rof-IW-tT5" secondAttribute="bottom" constant="2" id="UJQ-Bn-gNe"/>
+                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="trailing" secondItem="pkO-Y1-RIV" secondAttribute="trailing" constant="32" id="Wc0-ep-1Q5"/>
+                            <constraint firstItem="Rof-IW-tT5" firstAttribute="leading" secondItem="Rae-Ay-8X9" secondAttribute="leading" id="X0G-Or-PaB"/>
+                            <constraint firstItem="U3n-bk-aLH" firstAttribute="top" secondItem="qDj-wI-YZW" secondAttribute="bottom" constant="23" id="aNA-wJ-3LA"/>
+                            <constraint firstItem="Rof-IW-tT5" firstAttribute="trailing" secondItem="Rae-Ay-8X9" secondAttribute="trailing" id="qZM-K2-hC7"/>
+                            <constraint firstItem="Rof-IW-tT5" firstAttribute="top" secondItem="fve-kU-H04" secondAttribute="bottom" constant="18" id="tII-jr-Tgs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rae-Ay-8X9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lv5-iI-xuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="2577.6611694152925"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VVm-fo-bKn">
+            <objects>
+                <viewController id="Xf2-oc-2M6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z08-Tq-Yx2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDf-8b-ERy">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bZD-dL-RA4"/>
+                                    <constraint firstAttribute="width" constant="12" id="pkl-D8-4AW"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="bip-51-Uig" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="9i8-kC-T5N"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="BL5-yQ-qkE">
+                                <rect key="frame" x="146" y="123" width="83" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="3l8-Le-SLA"/>
+                                    <constraint firstAttribute="height" constant="125" id="LbX-VT-zzI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="c6m-ot-gRC">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="M24-r2-hu7"/>
+                                    <constraint firstAttribute="width" constant="44" id="MOB-Uq-Jrn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-gF-RZT">
+                                <rect key="frame" x="16" y="298" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bue-pG-YRI" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="61F-Aw-7Ul"/>
+                                    <constraint firstAttribute="height" constant="55" id="Ksm-X3-Qw2"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="o7v-Rk-A6M" kind="presentation" id="pSz-TT-NkB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1iB-44-mbj">
+                                <rect key="frame" x="16" y="347" width="343" height="99.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99.5" id="oSC-OI-Wfy"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="15-25 yaş">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> arasındaki erkeklerde görülen kanser türleri arasında birinci sıradadır. Ama erken teşhis ile yaklaşık %100 oranında iyileşme sağlanabilir. İşte bunu başaran ünlüler.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BL5-yQ-qkE" firstAttribute="top" secondItem="c6m-ot-gRC" secondAttribute="bottom" constant="60" id="0JQ-XT-szV"/>
+                            <constraint firstItem="c6m-ot-gRC" firstAttribute="top" secondItem="3pN-M0-93X" secondAttribute="top" constant="16" id="29B-qI-NiX"/>
+                            <constraint firstItem="3pN-M0-93X" firstAttribute="trailing" secondItem="1iB-44-mbj" secondAttribute="trailing" constant="16" id="3vg-Jd-xjL"/>
+                            <constraint firstItem="TRm-gF-RZT" firstAttribute="top" secondItem="BL5-yQ-qkE" secondAttribute="bottom" constant="50" id="9hz-Ro-q6Y"/>
+                            <constraint firstItem="TRm-gF-RZT" firstAttribute="centerX" secondItem="Z08-Tq-Yx2" secondAttribute="centerX" id="CgE-nB-0Fd"/>
+                            <constraint firstItem="BL5-yQ-qkE" firstAttribute="centerX" secondItem="Z08-Tq-Yx2" secondAttribute="centerX" id="CzL-ch-Qcx"/>
+                            <constraint firstItem="3pN-M0-93X" firstAttribute="trailing" secondItem="TRm-gF-RZT" secondAttribute="trailing" constant="16" id="DV4-8C-gkY"/>
+                            <constraint firstItem="BDf-8b-ERy" firstAttribute="leading" secondItem="3pN-M0-93X" secondAttribute="leading" constant="16" id="FSP-fM-9NI"/>
+                            <constraint firstItem="TRm-gF-RZT" firstAttribute="leading" secondItem="3pN-M0-93X" secondAttribute="leading" constant="16" id="JVp-rn-2zQ"/>
+                            <constraint firstItem="3pN-M0-93X" firstAttribute="bottom" secondItem="bue-pG-YRI" secondAttribute="bottom" constant="32" id="T91-Oo-oIc"/>
+                            <constraint firstItem="BDf-8b-ERy" firstAttribute="top" secondItem="3pN-M0-93X" secondAttribute="top" constant="16" id="XPx-CJ-cCk"/>
+                            <constraint firstItem="1iB-44-mbj" firstAttribute="top" secondItem="TRm-gF-RZT" secondAttribute="bottom" constant="20" id="Z8k-37-ozZ"/>
+                            <constraint firstItem="1iB-44-mbj" firstAttribute="leading" secondItem="3pN-M0-93X" secondAttribute="leading" constant="16" id="hel-LY-AlC"/>
+                            <constraint firstItem="3pN-M0-93X" firstAttribute="trailing" secondItem="bue-pG-YRI" secondAttribute="trailing" constant="32" id="ogt-Ni-5qf"/>
+                            <constraint firstItem="c6m-ot-gRC" firstAttribute="centerX" secondItem="Z08-Tq-Yx2" secondAttribute="centerX" id="pUO-Yo-yR8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3pN-M0-93X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVa-I6-bEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2518" y="1515"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QQs-Tu-SFi">
+            <objects>
+                <viewController id="4kx-YV-JZJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Mb-kh-gkw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-0E-TC0">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Hb4-9n-G06"/>
+                                    <constraint firstAttribute="width" constant="12" id="qAx-ti-zFg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="bip-51-Uig" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="cdo-oz-Vq6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-tI-vdh">
+                                <rect key="frame" x="146" y="123" width="83" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="4zj-AU-q9m"/>
+                                    <constraint firstAttribute="height" constant="125" id="WwO-eJ-C2q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="5eq-k4-nKN">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="OYy-yT-1UW"/>
+                                    <constraint firstAttribute="width" constant="44" id="djc-ru-MyA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkl-3C-dNU">
+                                <rect key="frame" x="16" y="298" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4H-VS-bzg" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="OD2-Jh-uVF"/>
+                                    <constraint firstAttribute="height" constant="55" id="jLK-Fd-HnE"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="o7v-Rk-A6M" kind="presentation" id="flz-kv-ni4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JbK-QM-01k">
+                                <rect key="frame" x="16" y="347" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UdS-HR-833"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Testis Kanseri en sık ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="25-35 yaş">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" arasında görülür. Ama erken teşhis ile yaklaşık %100 oranında iyileşme sağlanabilir. İşte bunu başaran ünlüler.">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3RV-0E-TC0" firstAttribute="top" secondItem="4M4-Vt-KQN" secondAttribute="top" constant="16" id="42A-LH-ZcC"/>
+                            <constraint firstItem="nkl-3C-dNU" firstAttribute="centerX" secondItem="8Mb-kh-gkw" secondAttribute="centerX" id="4iW-4F-Goc"/>
+                            <constraint firstItem="JbK-QM-01k" firstAttribute="leading" secondItem="4M4-Vt-KQN" secondAttribute="leading" constant="16" id="7uF-2o-qTl"/>
+                            <constraint firstItem="5eq-k4-nKN" firstAttribute="centerX" secondItem="8Mb-kh-gkw" secondAttribute="centerX" id="9VD-bi-NeZ"/>
+                            <constraint firstItem="JbK-QM-01k" firstAttribute="top" secondItem="nkl-3C-dNU" secondAttribute="bottom" constant="20" id="AZZ-Ld-pRa"/>
+                            <constraint firstItem="4M4-Vt-KQN" firstAttribute="trailing" secondItem="JbK-QM-01k" secondAttribute="trailing" constant="16" id="PWw-MX-x00"/>
+                            <constraint firstItem="3RV-0E-TC0" firstAttribute="leading" secondItem="4M4-Vt-KQN" secondAttribute="leading" constant="16" id="PsV-7Z-Rsb"/>
+                            <constraint firstItem="iK0-tI-vdh" firstAttribute="centerX" secondItem="8Mb-kh-gkw" secondAttribute="centerX" id="SLr-qZ-bgw"/>
+                            <constraint firstItem="4M4-Vt-KQN" firstAttribute="bottom" secondItem="w4H-VS-bzg" secondAttribute="bottom" constant="32" id="VGK-lm-tGJ"/>
+                            <constraint firstItem="4M4-Vt-KQN" firstAttribute="trailing" secondItem="w4H-VS-bzg" secondAttribute="trailing" constant="32" id="cE4-lB-W2Z"/>
+                            <constraint firstItem="4M4-Vt-KQN" firstAttribute="trailing" secondItem="nkl-3C-dNU" secondAttribute="trailing" constant="16" id="ehR-XV-Z0c"/>
+                            <constraint firstItem="iK0-tI-vdh" firstAttribute="top" secondItem="5eq-k4-nKN" secondAttribute="bottom" constant="60" id="mv1-I8-pXr"/>
+                            <constraint firstItem="5eq-k4-nKN" firstAttribute="top" secondItem="4M4-Vt-KQN" secondAttribute="top" constant="16" id="pnZ-gg-dEg"/>
+                            <constraint firstItem="nkl-3C-dNU" firstAttribute="top" secondItem="iK0-tI-vdh" secondAttribute="bottom" constant="50" id="sKC-z4-oQS"/>
+                            <constraint firstItem="nkl-3C-dNU" firstAttribute="leading" secondItem="4M4-Vt-KQN" secondAttribute="leading" constant="16" id="vBj-gW-UyD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4M4-Vt-KQN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRP-S9-92t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1732" y="1514"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JkF-iJ-9ft">
+            <objects>
+                <viewController id="YMF-oB-Wsn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UOD-uz-tMn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emK-cq-iAs">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="1aN-YB-5Uz"/>
+                                    <constraint firstAttribute="height" constant="21" id="SF8-qG-ccz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="bip-51-Uig" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="5aM-Xd-WF2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-T5-Q8Q">
+                                <rect key="frame" x="146" y="123" width="83" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="ZIf-pf-rMh"/>
+                                    <constraint firstAttribute="width" constant="83" id="ipp-Tx-PC9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="lPd-wW-kM8">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="JSc-oJ-328"/>
+                                    <constraint firstAttribute="width" constant="44" id="St7-mN-dKF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OU-2s-aJy">
+                                <rect key="frame" x="16" y="298" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-pl-HBB" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="BEp-Ky-4w7"/>
+                                    <constraint firstAttribute="height" constant="55" id="NaV-iN-ds0"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="o7v-Rk-A6M" kind="presentation" id="Ddi-Zx-FO0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-Ae-lvJ">
+                                <rect key="frame" x="16" y="347" width="343" height="80.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80.5" id="Z7h-h2-wbZ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Testis Kanseri en sık ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="15-35 yaş">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" arasında görülür. ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="35 yaş ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="üstünde nadiren risk teşkil eder. Erken teşhis ile yaklaşık %100 oranında iyileşme sağlanabilir. ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lPd-wW-kM8" firstAttribute="top" secondItem="4SM-p6-yiB" secondAttribute="top" constant="16" id="0Cs-GX-lce"/>
+                            <constraint firstItem="emK-cq-iAs" firstAttribute="top" secondItem="4SM-p6-yiB" secondAttribute="top" constant="16" id="0Yr-mu-fuH"/>
+                            <constraint firstItem="6OU-2s-aJy" firstAttribute="top" secondItem="Cmc-T5-Q8Q" secondAttribute="bottom" constant="50" id="4JH-mQ-T9i"/>
+                            <constraint firstItem="lPd-wW-kM8" firstAttribute="centerX" secondItem="UOD-uz-tMn" secondAttribute="centerX" id="KvR-Yg-Wps"/>
+                            <constraint firstItem="4SM-p6-yiB" firstAttribute="bottom" secondItem="u9U-pl-HBB" secondAttribute="bottom" constant="32" id="Llc-dR-AnY"/>
+                            <constraint firstItem="Cmc-T5-Q8Q" firstAttribute="top" secondItem="lPd-wW-kM8" secondAttribute="bottom" constant="60" id="SQs-Kv-hfR"/>
+                            <constraint firstItem="L8J-Ae-lvJ" firstAttribute="top" secondItem="6OU-2s-aJy" secondAttribute="bottom" constant="20" id="YEB-cn-VnK"/>
+                            <constraint firstItem="L8J-Ae-lvJ" firstAttribute="leading" secondItem="4SM-p6-yiB" secondAttribute="leading" constant="16" id="eWw-Wn-tty"/>
+                            <constraint firstItem="4SM-p6-yiB" firstAttribute="trailing" secondItem="L8J-Ae-lvJ" secondAttribute="trailing" constant="16" id="gGT-R9-WGL"/>
+                            <constraint firstItem="6OU-2s-aJy" firstAttribute="centerX" secondItem="UOD-uz-tMn" secondAttribute="centerX" id="j30-Nn-hFa"/>
+                            <constraint firstItem="Cmc-T5-Q8Q" firstAttribute="centerX" secondItem="UOD-uz-tMn" secondAttribute="centerX" id="k6D-BB-hUI"/>
+                            <constraint firstItem="6OU-2s-aJy" firstAttribute="leading" secondItem="4SM-p6-yiB" secondAttribute="leading" constant="16" id="km6-ND-0am"/>
+                            <constraint firstItem="emK-cq-iAs" firstAttribute="leading" secondItem="4SM-p6-yiB" secondAttribute="leading" constant="16" id="kn4-fu-M2u"/>
+                            <constraint firstItem="4SM-p6-yiB" firstAttribute="trailing" secondItem="6OU-2s-aJy" secondAttribute="trailing" constant="16" id="uqW-Zr-ekK"/>
+                            <constraint firstItem="4SM-p6-yiB" firstAttribute="trailing" secondItem="u9U-pl-HBB" secondAttribute="trailing" constant="32" id="wqp-Rq-GLE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4SM-p6-yiB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pw-lH-yE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930" y="1513"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uK5-f5-rhf">
+            <objects>
+                <viewController id="2Yr-ib-cLh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZM-ix-bOq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-e3-umF">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="236-De-N61"/>
+                                    <constraint firstAttribute="width" constant="12" id="XPa-0B-poN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="o7v-Rk-A6M" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="a9y-Mw-knv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-1j-iuM">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="A90-kF-bpS"/>
+                                    <constraint firstAttribute="width" constant="44" id="pgr-H8-J6t"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armStrong" translatesAutoresizingMaskIntoConstraints="NO" id="0oh-fw-gJr">
+                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="YHX-Lm-kvu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-OD-u1U">
+                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71B-Z0-AdX" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="UMD-NQ-746"/>
+                                    <constraint firstAttribute="width" constant="125" id="cfV-Sd-kjY"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Bmj-aD-H6a" kind="custom" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="sTk-bY-SCT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fCt-wn-pCG">
+                                <rect key="frame" x="16" y="382" width="343" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="Wqf-Cg-QXV"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="1996 yılında yayılımlı testis kanseri teşhisi koyuldu. Tedavilerinin ardından sağlığına kavuşan ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Lance Armstrong">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=", kendi adını taşıyan ve kanser savaşçılarını destekleyen bir vakıf kurdu.">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fCt-wn-pCG" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" constant="16" id="BB1-Sh-Z7z"/>
+                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="trailing" secondItem="nwe-OD-u1U" secondAttribute="trailing" constant="16" id="BCA-co-zc5"/>
+                            <constraint firstItem="0oh-fw-gJr" firstAttribute="top" secondItem="YsD-1j-iuM" secondAttribute="bottom" constant="18" id="IiQ-r5-IpT"/>
+                            <constraint firstItem="fCt-wn-pCG" firstAttribute="top" secondItem="nwe-OD-u1U" secondAttribute="bottom" constant="23" id="Yfa-3E-tBY"/>
+                            <constraint firstItem="nwe-OD-u1U" firstAttribute="top" secondItem="0oh-fw-gJr" secondAttribute="bottom" constant="2" id="ZJ3-d0-vjl"/>
+                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="trailing" secondItem="fCt-wn-pCG" secondAttribute="trailing" constant="16" id="eJj-mz-Olp"/>
+                            <constraint firstItem="YsD-1j-iuM" firstAttribute="centerX" secondItem="TZM-ix-bOq" secondAttribute="centerX" id="ejk-iX-jqN"/>
+                            <constraint firstItem="nwe-OD-u1U" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" constant="16" id="hhr-4l-ltp"/>
+                            <constraint firstItem="fJj-e3-umF" firstAttribute="top" secondItem="U9U-KZ-JpS" secondAttribute="top" constant="16" id="n31-x7-thk"/>
+                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="trailing" secondItem="71B-Z0-AdX" secondAttribute="trailing" constant="32" id="oFp-cv-RF3"/>
+                            <constraint firstItem="0oh-fw-gJr" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" id="qNV-D4-uOp"/>
+                            <constraint firstItem="YsD-1j-iuM" firstAttribute="top" secondItem="U9U-KZ-JpS" secondAttribute="top" constant="16" id="soN-MB-HQI"/>
+                            <constraint firstItem="fJj-e3-umF" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" constant="16" id="vsA-Fn-t7y"/>
+                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="bottom" secondItem="71B-Z0-AdX" secondAttribute="bottom" constant="32" id="xhO-OT-fQy"/>
+                            <constraint firstItem="0oh-fw-gJr" firstAttribute="trailing" secondItem="U9U-KZ-JpS" secondAttribute="trailing" id="ycb-c1-3DY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U9U-KZ-JpS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6X-cu-GtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270" y="2578"/>
+        </scene>
+        <!--End Tutorial View Controller-->
+        <scene sceneID="XLc-fW-I1x">
+            <objects>
+                <viewController id="Bmj-aD-H6a" customClass="EndTutorialViewController" customModule="testisim" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eg6-21-x16">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9P-bl-Z2C">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7a1-BH-Awz"/>
+                                    <constraint firstAttribute="width" constant="12" id="h3t-Tg-6Ru"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="2Yr-ib-cLh" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="ilu-v7-Cf0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-Vl-Y9r">
+                                <rect key="frame" x="165" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4rX-e1-xrR"/>
+                                    <constraint firstAttribute="height" constant="27" id="AlZ-2P-yBI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taboo" translatesAutoresizingMaskIntoConstraints="NO" id="Xpt-TI-DlC">
+                                <rect key="frame" x="0.0" y="81" width="375" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="wwx-eo-T7P"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-X9-HXI">
+                                <rect key="frame" x="16" y="343" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-Dj-a5P" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="218" y="580" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Lpa-MN-tzD"/>
+                                    <constraint firstAttribute="width" constant="125" id="mn3-oE-09p"/>
+                                </constraints>
+                                <state key="normal" title="Devam &gt;">
+                                    <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueButtonOnClick:" destination="Bmj-aD-H6a" eventType="touchUpInside" id="PBy-dZ-JDa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-sb-Pcn">
+                                <rect key="frame" x="16" y="382" width="343" height="82"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Jamie ‘Taboo’ Gomez’ e 2014 yılında testis kanseri belirtilerinin ortaya çıkmasının ardından testis kanseri teşhisi koyuldu. Tanı koyulduğunda kanser yayılmış olduğu için cerrahi operasyon ve kemoterapi tedavisi gördü. Şuanda tamamıyla iyileşti.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EIq-sb-Pcn" firstAttribute="top" secondItem="J7d-X9-HXI" secondAttribute="bottom" constant="23" id="3Ij-JP-9gN"/>
+                            <constraint firstItem="tXt-ci-a0M" firstAttribute="bottom" secondItem="dgX-Dj-a5P" secondAttribute="bottom" constant="32" id="Biy-ci-K5R"/>
+                            <constraint firstItem="x2x-Vl-Y9r" firstAttribute="centerX" secondItem="eg6-21-x16" secondAttribute="centerX" id="K1W-SC-Agd"/>
+                            <constraint firstItem="Xpt-TI-DlC" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" id="KAs-bg-etP"/>
+                            <constraint firstItem="x2x-Vl-Y9r" firstAttribute="top" secondItem="tXt-ci-a0M" secondAttribute="top" constant="16" id="O8b-UT-mI2"/>
+                            <constraint firstItem="Xpt-TI-DlC" firstAttribute="trailing" secondItem="tXt-ci-a0M" secondAttribute="trailing" id="TPb-1i-6Hh"/>
+                            <constraint firstItem="J7d-X9-HXI" firstAttribute="top" secondItem="Xpt-TI-DlC" secondAttribute="bottom" constant="2" id="YGd-tY-62l"/>
+                            <constraint firstItem="m9P-bl-Z2C" firstAttribute="top" secondItem="tXt-ci-a0M" secondAttribute="top" constant="16" id="Zap-fn-QXZ"/>
+                            <constraint firstItem="EIq-sb-Pcn" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" constant="16" id="aEU-RD-SYz"/>
+                            <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="EIq-sb-Pcn" secondAttribute="trailing" constant="16" id="bbx-FB-tKx"/>
+                            <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="J7d-X9-HXI" secondAttribute="trailing" constant="16" id="hHf-Ld-h3l"/>
+                            <constraint firstItem="Xpt-TI-DlC" firstAttribute="top" secondItem="x2x-Vl-Y9r" secondAttribute="bottom" constant="18" id="lUQ-yg-7kx"/>
+                            <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="dgX-Dj-a5P" secondAttribute="trailing" constant="32" id="sni-70-ehT"/>
+                            <constraint firstItem="m9P-bl-Z2C" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" constant="16" id="u9Q-Vp-IFM"/>
+                            <constraint firstItem="J7d-X9-HXI" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" constant="16" id="x3Z-XR-xVB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tXt-ci-a0M"/>
+                    </view>
+                    <connections>
+                        <segue destination="emy-Ne-H0u" kind="custom" identifier="segueTutorialToMainMenu" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="qSy-z9-TF0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSt-VJ-3zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="2578"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arjen" width="375" height="259"/>
+        <image name="armStrong" width="375" height="250"/>
+        <image name="back" width="12" height="21"/>
         <image name="background" width="375" height="667"/>
         <image name="coolBackground" width="375" height="285"/>
+        <image name="kanser" width="83" height="125"/>
+        <image name="logoHeader" width="44" height="27"/>
         <image name="logoSplash" width="234" height="143"/>
         <image name="logoUfak" width="97" height="59"/>
+        <image name="taboo" width="375" height="250"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ilu-v7-Cf0"/>
+        <segue reference="a9y-Mw-knv"/>
+        <segue reference="qSy-z9-TF0"/>
+        <segue reference="PJ3-39-sjb"/>
+    </inferredMetricsTieBreakers>
 </document>

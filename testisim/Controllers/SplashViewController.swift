@@ -9,17 +9,27 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if ( UserDefaults.standard.bool(forKey: UserDefaultsKeys.IS_USER_COMPLATE_TUTORIALS)) {
+            Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(sequeToMainMenu), userInfo: nil, repeats: false)
+        } else {
+            Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(segueToTutorial), userInfo: nil, repeats: false)
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @objc func sequeToMainMenu() {
+        self.performSegue(withIdentifier: "segueSplashToMainMenu", sender: self)
+    }
+    
+    @objc func segueToTutorial() {
+        self.performSegue(withIdentifier: "segueSplashToTutorial", sender: self)
+    }
 }
 

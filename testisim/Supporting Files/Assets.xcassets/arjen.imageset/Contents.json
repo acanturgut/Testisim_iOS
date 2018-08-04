@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "arjenrobbenCropped1Wjzpa24F04X71Sx0Ixy3Bp4Gv.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "arjenrobbenCropped1Wjzpa24F04X71Sx0Ixy3Bp4Gv@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "arjenrobbenCropped1Wjzpa24F04X71Sx0Ixy3Bp4Gv@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
