@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-vV-UqR">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-vV-UqR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSplash" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-7u-hi4">
                                 <rect key="frame" x="43" y="212.5" width="234" height="143"/>
@@ -34,17 +34,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pmx-hS-iaE">
+                                <rect key="frame" x="150" y="469" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5WY-yE-kCM"/>
+                                    <constraint firstAttribute="width" constant="20" id="fdb-lm-XCj"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="shG-x8-D6f" firstAttribute="top" secondItem="pmx-hS-iaE" secondAttribute="bottom" constant="20" id="38K-iQ-tz9"/>
                             <constraint firstItem="iIY-sR-RIf" firstAttribute="trailing" secondItem="ERN-vV-UqR" secondAttribute="trailing" id="4rq-SC-OQL"/>
-                            <constraint firstItem="ERN-vV-UqR" firstAttribute="top" secondItem="iIY-sR-RIf" secondAttribute="top" id="6FB-Om-8Pa"/>
+                            <constraint firstItem="ERN-vV-UqR" firstAttribute="top" secondItem="JzS-Hx-DLC" secondAttribute="top" id="6FB-Om-8Pa"/>
+                            <constraint firstItem="pmx-hS-iaE" firstAttribute="centerX" secondItem="JzS-Hx-DLC" secondAttribute="centerX" id="9uM-hz-HCB"/>
                             <constraint firstItem="shG-x8-D6f" firstAttribute="leading" secondItem="iIY-sR-RIf" secondAttribute="leading" id="Eai-Xh-qXZ"/>
                             <constraint firstItem="Jy8-7u-hi4" firstAttribute="centerX" secondItem="JzS-Hx-DLC" secondAttribute="centerX" id="EkB-nO-9v2"/>
                             <constraint firstItem="ERN-vV-UqR" firstAttribute="leading" secondItem="iIY-sR-RIf" secondAttribute="leading" id="GmU-nc-qO4"/>
                             <constraint firstAttribute="trailing" secondItem="shG-x8-D6f" secondAttribute="trailing" id="NWw-xb-nz9"/>
                             <constraint firstItem="Jy8-7u-hi4" firstAttribute="centerY" secondItem="JzS-Hx-DLC" secondAttribute="centerY" id="Sob-G0-Vc8"/>
-                            <constraint firstItem="iIY-sR-RIf" firstAttribute="bottom" secondItem="ERN-vV-UqR" secondAttribute="bottom" id="UjO-1a-a7X"/>
+                            <constraint firstAttribute="bottom" secondItem="ERN-vV-UqR" secondAttribute="bottom" id="UjO-1a-a7X"/>
                             <constraint firstItem="iIY-sR-RIf" firstAttribute="bottom" secondItem="shG-x8-D6f" secondAttribute="bottom" constant="38" id="dE1-va-aRS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iIY-sR-RIf"/>
@@ -239,7 +249,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-H3-e0a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maninMenuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-H3-e0a">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBK-fM-3Sc">
@@ -251,7 +261,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npSymptom" translatesAutoresizingMaskIntoConstraints="NO" id="awc-bS-Q2Y">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npMic" translatesAutoresizingMaskIntoConstraints="NO" id="awc-bS-Q2Y">
                                         <rect key="frame" x="29" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="MeO-Hw-Tya"/>
@@ -333,24 +343,10 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                     <constraint firstItem="fwa-6V-z4o" firstAttribute="top" secondItem="gFe-2y-gxC" secondAttribute="bottom" constant="8" id="tkf-P3-cha"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npShare" translatesAutoresizingMaskIntoConstraints="NO" id="G8F-ux-Ue5">
-                                <rect key="frame" x="16" y="36" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dbm-lB-jVH"/>
-                                    <constraint firstAttribute="width" constant="30" id="wuJ-HU-yhx"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npSettings" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-03-1md">
-                                <rect key="frame" x="274" y="36" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LGd-sp-jkQ"/>
-                                    <constraint firstAttribute="width" constant="30" id="Y63-I2-WOx"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoUfak" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-xp-4C1">
-                                <rect key="frame" x="60" y="60" width="200" height="66"/>
+                                <rect key="frame" x="75" y="60" width="170" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Fbm-nz-geb"/>
+                                    <constraint firstAttribute="width" constant="170" id="Fbm-nz-geb"/>
                                     <constraint firstAttribute="height" priority="700" constant="66" id="Vw7-bl-HDJ"/>
                                 </constraints>
                             </imageView>
@@ -359,7 +355,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri erken teşhis ile yaklaşık %100 oranında iyileşme sağlanabilir. Testlerinizi aksatmayın, kafanız rahat olsun :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XY4-QM-LXO">
                                         <rect key="frame" x="8" y="8" width="272" height="107"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -388,6 +384,9 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <state key="normal" title="Teste Başla" backgroundImage="buton">
                                     <color key="titleColor" red="0.65490196078431373" green="0.45490196078431372" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LMe-DU-9UP" kind="custom" identifier="" customClass="SegueFromRight" customModule="testisim" customModuleProvider="target" id="jhC-G4-8fq"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJC-qo-3ob">
                                 <rect key="frame" x="16" y="358" width="89" height="74"/>
@@ -407,6 +406,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="4ZU-gb-SMv"/>
                                     <constraint firstItem="WjB-oJ-kBo" firstAttribute="centerX" secondItem="gJC-qo-3ob" secondAttribute="centerX" id="Cug-37-NIY"/>
@@ -416,6 +416,9 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                     <constraint firstItem="LBS-Ln-aCL" firstAttribute="leading" secondItem="gJC-qo-3ob" secondAttribute="leading" constant="5" id="TbH-q3-pge"/>
                                     <constraint firstItem="WjB-oJ-kBo" firstAttribute="top" secondItem="gJC-qo-3ob" secondAttribute="top" constant="10" id="cJN-5I-Uz6"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eS1-g9-uh2" appends="YES" id="lQh-4w-XzG"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-nr-Wuk">
                                 <rect key="frame" x="16" y="449" width="89" height="74"/>
@@ -482,38 +485,57 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                     <constraint firstAttribute="width" constant="89" id="v7d-7l-Gdj"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5S-3s-gRE">
+                                <rect key="frame" x="16" y="36" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7L3-1m-M0c"/>
+                                    <constraint firstAttribute="width" constant="30" id="ayl-ZL-9GQ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="npShare"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIf-mU-dfo">
+                                <rect key="frame" x="274" y="36" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1qM-wb-5Xt"/>
+                                    <constraint firstAttribute="height" constant="30" id="Vun-fp-AeU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="npSettings"/>
+                                <connections>
+                                    <segue destination="RO5-6o-bYz" kind="presentation" id="XFB-wg-hz7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Dcq-cT-j13" firstAttribute="top" secondItem="9Pe-fc-juK" secondAttribute="bottom" constant="8" id="1MX-N9-zII"/>
                             <constraint firstItem="fYE-qk-jBQ" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="2gh-E1-kA8"/>
                             <constraint firstItem="ZQJ-nG-FXb" firstAttribute="top" secondItem="fEP-Nf-7Bz" secondAttribute="bottom" constant="16" id="57B-bn-VhL"/>
-                            <constraint firstItem="G8F-ux-Ue5" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="5c1-nx-ghC"/>
                             <constraint firstItem="HXG-xp-4C1" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="7Ul-kj-cVC"/>
                             <constraint firstItem="SF4-H3-e0a" firstAttribute="top" secondItem="tho-9W-59w" secondAttribute="top" id="7mI-ua-KpU"/>
                             <constraint firstItem="Dcq-cT-j13" firstAttribute="top" secondItem="dS8-yf-UzG" secondAttribute="bottom" constant="8" id="8qj-eJ-iui"/>
-                            <constraint firstItem="SF4-H3-e0a" firstAttribute="bottom" secondItem="YQQ-Mr-C6n" secondAttribute="bottom" id="BEw-WQ-SLO"/>
+                            <constraint firstItem="SF4-H3-e0a" firstAttribute="bottom" secondItem="tho-9W-59w" secondAttribute="bottom" id="BEw-WQ-SLO"/>
                             <constraint firstItem="Mq5-i8-ten" firstAttribute="top" secondItem="ZQJ-nG-FXb" secondAttribute="bottom" constant="14" id="CW8-YS-f6S"/>
                             <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="fEP-Nf-7Bz" secondAttribute="trailing" constant="16" id="Cq7-qT-cxP"/>
                             <constraint firstItem="fEP-Nf-7Bz" firstAttribute="top" secondItem="HXG-xp-4C1" secondAttribute="bottom" constant="8" id="D7x-kS-jzL"/>
-                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="9ex-03-1md" secondAttribute="trailing" constant="16" id="DPd-uZ-zvP"/>
                             <constraint firstItem="SF4-H3-e0a" firstAttribute="trailing" secondItem="YQQ-Mr-C6n" secondAttribute="trailing" id="EKu-vs-Nyl"/>
                             <constraint firstItem="gJC-qo-3ob" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="Nny-yt-S0u"/>
                             <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="fYE-qk-jBQ" secondAttribute="trailing" constant="16" id="OsG-E4-BSo"/>
                             <constraint firstItem="9Pe-fc-juK" firstAttribute="top" secondItem="fYE-qk-jBQ" secondAttribute="bottom" constant="8" id="SEB-5X-Guc"/>
                             <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="Dcq-cT-j13" secondAttribute="trailing" constant="16" id="U33-Ta-pgE"/>
                             <constraint firstItem="Mq5-i8-ten" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="V0h-JC-fHr"/>
-                            <constraint firstItem="G8F-ux-Ue5" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="16" id="YAT-cz-ZQS"/>
                             <constraint firstItem="Dcq-cT-j13" firstAttribute="top" secondItem="OdZ-nr-Wuk" secondAttribute="bottom" constant="8" id="Ytc-lF-3Yh"/>
                             <constraint firstItem="HXG-xp-4C1" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="40" id="b7z-iI-uQb"/>
+                            <constraint firstItem="j5S-3s-gRE" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="16" id="bkf-fN-2Fi"/>
                             <constraint firstItem="9Pe-fc-juK" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="e2J-Fd-hb4"/>
                             <constraint firstItem="fYE-qk-jBQ" firstAttribute="top" secondItem="lBK-fM-3Sc" secondAttribute="bottom" constant="8" id="fjO-zQ-JzW"/>
                             <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="dS8-yf-UzG" secondAttribute="trailing" constant="16" id="gDK-hf-Jlj"/>
+                            <constraint firstItem="fIf-mU-dfo" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="16" id="hdX-TT-tfX"/>
+                            <constraint firstItem="j5S-3s-gRE" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="i8l-1I-NYM"/>
                             <constraint firstItem="Dcq-cT-j13" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="iec-O3-Af4"/>
-                            <constraint firstItem="9ex-03-1md" firstAttribute="top" secondItem="YQQ-Mr-C6n" secondAttribute="top" constant="16" id="n2R-QO-Ja5"/>
                             <constraint firstItem="YQQ-Mr-C6n" firstAttribute="bottom" secondItem="Dcq-cT-j13" secondAttribute="bottom" constant="16" id="nYl-aH-baw"/>
                             <constraint firstItem="OdZ-nr-Wuk" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="o28-FC-Kzf"/>
                             <constraint firstItem="ZQJ-nG-FXb" firstAttribute="centerX" secondItem="tho-9W-59w" secondAttribute="centerX" id="oDp-KD-xTc"/>
+                            <constraint firstItem="YQQ-Mr-C6n" firstAttribute="trailing" secondItem="fIf-mU-dfo" secondAttribute="trailing" constant="16" id="sgB-Db-S28"/>
                             <constraint firstItem="fEP-Nf-7Bz" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" constant="16" id="uF8-uO-HUk"/>
                             <constraint firstItem="SF4-H3-e0a" firstAttribute="leading" secondItem="YQQ-Mr-C6n" secondAttribute="leading" id="vJd-YW-IhB"/>
                             <constraint firstItem="fYE-qk-jBQ" firstAttribute="top" secondItem="Mq5-i8-ten" secondAttribute="bottom" constant="8" id="vRL-gX-Qe7"/>
@@ -524,6 +546,12 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bkP-7l-3kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eS1-g9-uh2">
+                    <connections>
+                        <outlet property="delegate" destination="gJC-qo-3ob" id="v6G-3q-BN9"/>
+                        <segue destination="OSU-ld-HNK" kind="presentation" id="YhP-Ww-fsf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3521" y="467"/>
         </scene>
@@ -534,13 +562,124 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                     <view key="view" contentMode="scaleToFill" id="ccJ-vM-Ls6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="apG-y2-sSQ">
+                                <rect key="frame" x="138" y="36" width="44" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Hna-O9-4iV"/>
+                                    <constraint firstAttribute="width" constant="44" id="i23-27-Lgw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste başla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rst-VD-xzF">
+                                <rect key="frame" x="16" y="73" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4ab-1j-iqg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9L-qG-rHJ">
+                                <rect key="frame" x="16" y="119" width="288" height="76.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76.5" id="3cG-21-lro"/>
+                                </constraints>
+                                <string key="text">Korkacak birşey yok. Testis Kanseri olma ihtimaliniz düşük. Ancak ayda bir defa, birkaç dakika içinde kontrol etmek belki de size hayat verecek.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testStart" translatesAutoresizingMaskIntoConstraints="NO" id="Dej-hG-WFF">
+                                <rect key="frame" x="40" y="219.5" width="240" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="F3k-Sv-BBn"/>
+                                    <constraint firstAttribute="height" priority="900" constant="128" id="wRa-hW-1eJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF9-Ot-4nY">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="fc6-5i-NEc"/>
+                                    <constraint firstAttribute="height" constant="21" id="odl-gY-ZXr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="emy-Ne-H0u" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="aCj-uS-GW8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vT-dL-FmM" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="179" y="497" width="125" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="T7n-W6-BUK"/>
+                                    <constraint firstAttribute="height" constant="55" id="vYI-tm-93d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Başla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="vertical" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" red="0.3294117647" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="didBackGroundGradient" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testislerin üzerindeki deri daha da yumuşayacağı ve gevşeyeceği için muayeneyi banyo ya da duş sonrası yapın." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0h-gI-8Kb">
+                                <rect key="frame" x="16" y="397.5" width="288" height="76.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76.5" id="r5b-us-caw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.3843137254901961" green="0.60784313725490191" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dej-hG-WFF" firstAttribute="centerX" secondItem="ccJ-vM-Ls6" secondAttribute="centerX" id="374-iz-Pea"/>
+                            <constraint firstItem="r9L-qG-rHJ" firstAttribute="top" secondItem="Rst-VD-xzF" secondAttribute="bottom" constant="16" id="3HJ-ni-U0t"/>
+                            <constraint firstItem="kcu-f4-XZZ" firstAttribute="trailing" secondItem="r9L-qG-rHJ" secondAttribute="trailing" constant="16" id="6oe-8V-JaJ"/>
+                            <constraint firstItem="T0h-gI-8Kb" firstAttribute="leading" secondItem="kcu-f4-XZZ" secondAttribute="leading" constant="16" id="A9P-ER-aud"/>
+                            <constraint firstItem="Rst-VD-xzF" firstAttribute="leading" secondItem="kcu-f4-XZZ" secondAttribute="leading" constant="16" id="Hnn-qd-0Th"/>
+                            <constraint firstItem="bF9-Ot-4nY" firstAttribute="leading" secondItem="kcu-f4-XZZ" secondAttribute="leading" constant="16" id="L87-kM-zV2"/>
+                            <constraint firstItem="kcu-f4-XZZ" firstAttribute="trailing" secondItem="7vT-dL-FmM" secondAttribute="trailing" constant="16" id="Mrs-Od-x2z"/>
+                            <constraint firstItem="Dej-hG-WFF" firstAttribute="top" secondItem="r9L-qG-rHJ" secondAttribute="bottom" constant="24" id="Rrq-Ru-0Mq"/>
+                            <constraint firstItem="bF9-Ot-4nY" firstAttribute="top" secondItem="kcu-f4-XZZ" secondAttribute="top" constant="16" id="UBJ-hU-4HQ"/>
+                            <constraint firstItem="Rst-VD-xzF" firstAttribute="top" secondItem="apG-y2-sSQ" secondAttribute="bottom" constant="10" id="UUk-kL-p0K"/>
+                            <constraint firstItem="kcu-f4-XZZ" firstAttribute="trailing" secondItem="T0h-gI-8Kb" secondAttribute="trailing" constant="16" id="XQ7-OY-Wba"/>
+                            <constraint firstItem="kcu-f4-XZZ" firstAttribute="bottom" secondItem="T0h-gI-8Kb" secondAttribute="bottom" constant="94" id="ZQN-y8-cu0"/>
+                            <constraint firstItem="apG-y2-sSQ" firstAttribute="top" secondItem="kcu-f4-XZZ" secondAttribute="top" constant="16" id="aGb-86-72A"/>
+                            <constraint firstItem="apG-y2-sSQ" firstAttribute="centerX" secondItem="ccJ-vM-Ls6" secondAttribute="centerX" id="dB5-RG-GfE"/>
+                            <constraint firstItem="kcu-f4-XZZ" firstAttribute="bottom" secondItem="7vT-dL-FmM" secondAttribute="bottom" constant="16" id="g25-il-Z7c"/>
+                            <constraint firstItem="T0h-gI-8Kb" firstAttribute="top" secondItem="Dej-hG-WFF" secondAttribute="bottom" constant="24" id="gxA-3I-J53"/>
+                            <constraint firstItem="kcu-f4-XZZ" firstAttribute="trailing" secondItem="Rst-VD-xzF" secondAttribute="trailing" constant="16" id="hgR-Pj-K5N"/>
+                            <constraint firstItem="r9L-qG-rHJ" firstAttribute="leading" secondItem="kcu-f4-XZZ" secondAttribute="leading" constant="16" id="lt0-W8-aHq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kcu-f4-XZZ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJ5-KE-wmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4315" y="251"/>
+            <point key="canvasLocation" x="4291.875" y="248.2394366197183"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PaE-Wd-AVa">
@@ -645,7 +784,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFk-dC-uoz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3531" y="1173"/>
+            <point key="canvasLocation" x="4802" y="1173"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Piy-zO-2VJ">
@@ -660,7 +799,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYs-zR-Ycj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3539" y="1887"/>
+            <point key="canvasLocation" x="4001" y="2084"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3U7-fV-fx5">
@@ -675,7 +814,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9f-ZS-T9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4250" y="1882"/>
+            <point key="canvasLocation" x="4742" y="2085"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Amx-Hb-baw">
@@ -690,7 +829,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNT-ZA-nzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4939" y="1882"/>
+            <point key="canvasLocation" x="5481" y="2086"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kSJ-YL-yNQ">
@@ -705,7 +844,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxP-UI-LyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4233" y="1174"/>
+            <point key="canvasLocation" x="5481" y="1173"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kpe-Zr-lyc">
@@ -720,7 +859,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gie-rm-j6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4911" y="1169"/>
+            <point key="canvasLocation" x="6191" y="1173"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d9g-po-AGV">
@@ -729,13 +868,88 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                     <view key="view" contentMode="scaleToFill" id="KGj-34-68c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbe-dB-T6q">
+                                <rect key="frame" x="16" y="36" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Oy9-cO-ohz"/>
+                                    <constraint firstAttribute="height" constant="21" id="WgO-M3-OC2"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <segue destination="emy-Ne-H0u" kind="custom" customClass="SegueFromLeft" customModule="testisim" customModuleProvider="target" id="7v2-YF-4iQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayarlar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wt-n4-9S8">
+                                <rect key="frame" x="130.5" y="36" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0S-Ud-lmL">
+                                <rect key="frame" x="16" y="75" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFK-p9-FAz">
+                                <rect key="frame" x="29" y="137" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTe-47-2lx">
+                                <rect key="frame" x="29" y="307" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMH-kc-PGG">
+                                <rect key="frame" x="139" y="191" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBh-7l-hF2">
+                                <rect key="frame" x="29" y="186" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvY-Ax-G7M">
+                                <rect key="frame" x="247" y="186" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8A-jZ-2VF">
+                                <rect key="frame" x="139" y="247" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5q-ov-qNv">
+                                <rect key="frame" x="253" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GV0-f5-fEl">
+                                <rect key="frame" x="246" y="70" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6wt-n4-9S8" firstAttribute="centerX" secondItem="KGj-34-68c" secondAttribute="centerX" id="IkP-Wi-xnG"/>
+                            <constraint firstItem="6wt-n4-9S8" firstAttribute="top" secondItem="eHN-xF-8U1" secondAttribute="top" constant="16" id="UhF-mh-2Xz"/>
+                            <constraint firstItem="tbe-dB-T6q" firstAttribute="top" secondItem="eHN-xF-8U1" secondAttribute="top" constant="16" id="Zdx-1b-45d"/>
+                            <constraint firstItem="tbe-dB-T6q" firstAttribute="leading" secondItem="eHN-xF-8U1" secondAttribute="leading" constant="16" id="qBE-a2-n71"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eHN-xF-8U1"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLu-ID-cjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3519" y="-228"/>
+            <point key="canvasLocation" x="4292" y="-560"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="x7A-MV-dFR">
@@ -765,7 +979,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-Y1-RIV" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="481" width="125" height="55"/>
+                                <rect key="frame" x="179" y="497" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="Ige-Xr-Ml8"/>
                                     <constraint firstAttribute="height" constant="55" id="nnZ-O0-hC7"/>
@@ -824,9 +1038,9 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                             <constraint firstItem="U3n-bk-aLH" firstAttribute="leading" secondItem="Rae-Ay-8X9" secondAttribute="leading" constant="16" id="9DC-pe-Ead"/>
                             <constraint firstItem="qDj-wI-YZW" firstAttribute="leading" secondItem="Rae-Ay-8X9" secondAttribute="leading" constant="16" id="CVh-DJ-3T6"/>
                             <constraint firstItem="Rae-Ay-8X9" firstAttribute="trailing" secondItem="qDj-wI-YZW" secondAttribute="trailing" constant="16" id="Ko4-RB-MHB"/>
-                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="bottom" secondItem="pkO-Y1-RIV" secondAttribute="bottom" constant="32" id="RL4-vh-kSs"/>
+                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="bottom" secondItem="pkO-Y1-RIV" secondAttribute="bottom" constant="16" id="RL4-vh-kSs"/>
                             <constraint firstItem="qDj-wI-YZW" firstAttribute="top" secondItem="Rof-IW-tT5" secondAttribute="bottom" constant="2" id="UJQ-Bn-gNe"/>
-                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="trailing" secondItem="pkO-Y1-RIV" secondAttribute="trailing" constant="32" id="Wc0-ep-1Q5"/>
+                            <constraint firstItem="Rae-Ay-8X9" firstAttribute="trailing" secondItem="pkO-Y1-RIV" secondAttribute="trailing" constant="16" id="Wc0-ep-1Q5"/>
                             <constraint firstItem="Rof-IW-tT5" firstAttribute="leading" secondItem="Rae-Ay-8X9" secondAttribute="leading" id="X0G-Or-PaB"/>
                             <constraint firstItem="U3n-bk-aLH" firstAttribute="top" secondItem="qDj-wI-YZW" secondAttribute="bottom" constant="23" id="aNA-wJ-3LA"/>
                             <constraint firstItem="Rof-IW-tT5" firstAttribute="trailing" secondItem="Rae-Ay-8X9" secondAttribute="trailing" id="qZM-K2-hC7"/>
@@ -1240,7 +1454,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71B-Z0-AdX" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="481" width="125" height="55"/>
+                                <rect key="frame" x="179" y="497" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="UMD-NQ-746"/>
                                     <constraint firstAttribute="width" constant="125" id="cfV-Sd-kjY"/>
@@ -1302,11 +1516,11 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                             <constraint firstItem="YsD-1j-iuM" firstAttribute="centerX" secondItem="TZM-ix-bOq" secondAttribute="centerX" id="ejk-iX-jqN"/>
                             <constraint firstItem="nwe-OD-u1U" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" constant="16" id="hhr-4l-ltp"/>
                             <constraint firstItem="fJj-e3-umF" firstAttribute="top" secondItem="U9U-KZ-JpS" secondAttribute="top" constant="16" id="n31-x7-thk"/>
-                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="trailing" secondItem="71B-Z0-AdX" secondAttribute="trailing" constant="32" id="oFp-cv-RF3"/>
+                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="trailing" secondItem="71B-Z0-AdX" secondAttribute="trailing" constant="16" id="oFp-cv-RF3"/>
                             <constraint firstItem="0oh-fw-gJr" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" id="qNV-D4-uOp"/>
                             <constraint firstItem="YsD-1j-iuM" firstAttribute="top" secondItem="U9U-KZ-JpS" secondAttribute="top" constant="16" id="soN-MB-HQI"/>
                             <constraint firstItem="fJj-e3-umF" firstAttribute="leading" secondItem="U9U-KZ-JpS" secondAttribute="leading" constant="16" id="vsA-Fn-t7y"/>
-                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="bottom" secondItem="71B-Z0-AdX" secondAttribute="bottom" constant="32" id="xhO-OT-fQy"/>
+                            <constraint firstItem="U9U-KZ-JpS" firstAttribute="bottom" secondItem="71B-Z0-AdX" secondAttribute="bottom" constant="16" id="xhO-OT-fQy"/>
                             <constraint firstItem="0oh-fw-gJr" firstAttribute="trailing" secondItem="U9U-KZ-JpS" secondAttribute="trailing" id="ycb-c1-3DY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U9U-KZ-JpS"/>
@@ -1355,7 +1569,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-Dj-a5P" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="481" width="125" height="55"/>
+                                <rect key="frame" x="179" y="497" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Lpa-MN-tzD"/>
                                     <constraint firstAttribute="width" constant="125" id="mn3-oE-09p"/>
@@ -1395,7 +1609,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EIq-sb-Pcn" firstAttribute="top" secondItem="J7d-X9-HXI" secondAttribute="bottom" constant="23" id="3Ij-JP-9gN"/>
-                            <constraint firstItem="tXt-ci-a0M" firstAttribute="bottom" secondItem="dgX-Dj-a5P" secondAttribute="bottom" constant="32" id="Biy-ci-K5R"/>
+                            <constraint firstItem="tXt-ci-a0M" firstAttribute="bottom" secondItem="dgX-Dj-a5P" secondAttribute="bottom" constant="16" id="Biy-ci-K5R"/>
                             <constraint firstItem="x2x-Vl-Y9r" firstAttribute="centerX" secondItem="eg6-21-x16" secondAttribute="centerX" id="K1W-SC-Agd"/>
                             <constraint firstItem="Xpt-TI-DlC" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" id="KAs-bg-etP"/>
                             <constraint firstItem="x2x-Vl-Y9r" firstAttribute="top" secondItem="tXt-ci-a0M" secondAttribute="top" constant="16" id="O8b-UT-mI2"/>
@@ -1406,7 +1620,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                             <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="EIq-sb-Pcn" secondAttribute="trailing" constant="16" id="bbx-FB-tKx"/>
                             <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="J7d-X9-HXI" secondAttribute="trailing" constant="16" id="hHf-Ld-h3l"/>
                             <constraint firstItem="Xpt-TI-DlC" firstAttribute="top" secondItem="x2x-Vl-Y9r" secondAttribute="bottom" constant="18" id="lUQ-yg-7kx"/>
-                            <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="dgX-Dj-a5P" secondAttribute="trailing" constant="32" id="sni-70-ehT"/>
+                            <constraint firstItem="tXt-ci-a0M" firstAttribute="trailing" secondItem="dgX-Dj-a5P" secondAttribute="trailing" constant="16" id="sni-70-ehT"/>
                             <constraint firstItem="m9P-bl-Z2C" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" constant="16" id="u9Q-Vp-IFM"/>
                             <constraint firstItem="J7d-X9-HXI" firstAttribute="leading" secondItem="tXt-ci-a0M" secondAttribute="leading" constant="16" id="x3Z-XR-xVB"/>
                         </constraints>
@@ -1459,7 +1673,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKP-Za-32v" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="481" width="125" height="55"/>
+                                <rect key="frame" x="179" y="497" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="hBg-Ci-MF5"/>
                                     <constraint firstAttribute="height" constant="55" id="rip-EZ-55g"/>
@@ -1508,9 +1722,9 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                             <constraint firstItem="iNW-SF-dWo" firstAttribute="trailing" secondItem="dgP-jJ-TmP" secondAttribute="trailing" id="Fz5-K0-9ez"/>
                             <constraint firstItem="dgP-jJ-TmP" firstAttribute="trailing" secondItem="tKd-Tg-9Hr" secondAttribute="trailing" constant="16" id="HpS-O9-wSR"/>
                             <constraint firstItem="1Nx-9T-QNL" firstAttribute="centerX" secondItem="IWd-c8-QhF" secondAttribute="centerX" id="PYL-3c-Ftb"/>
-                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="bottom" secondItem="eKP-Za-32v" secondAttribute="bottom" constant="32" id="Rwd-ME-Nw7"/>
+                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="bottom" secondItem="eKP-Za-32v" secondAttribute="bottom" constant="16" id="Rwd-ME-Nw7"/>
                             <constraint firstItem="1Nx-9T-QNL" firstAttribute="top" secondItem="dgP-jJ-TmP" secondAttribute="top" constant="16" id="TAB-bu-5iU"/>
-                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="trailing" secondItem="eKP-Za-32v" secondAttribute="trailing" constant="32" id="Ykc-Uy-HFe"/>
+                            <constraint firstItem="dgP-jJ-TmP" firstAttribute="trailing" secondItem="eKP-Za-32v" secondAttribute="trailing" constant="16" id="Ykc-Uy-HFe"/>
                             <constraint firstItem="tKd-Tg-9Hr" firstAttribute="top" secondItem="iNW-SF-dWo" secondAttribute="bottom" constant="2" id="abt-sT-Ub2"/>
                             <constraint firstItem="iNW-SF-dWo" firstAttribute="top" secondItem="1Nx-9T-QNL" secondAttribute="bottom" constant="18" id="cLW-ck-FqM"/>
                             <constraint firstItem="tKd-Tg-9Hr" firstAttribute="leading" secondItem="dgP-jJ-TmP" secondAttribute="leading" constant="16" id="dW3-80-0Jf"/>
@@ -1536,20 +1750,23 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <image name="logoHeader" width="44" height="27"/>
         <image name="logoSplash" width="234" height="143"/>
         <image name="logoUfak" width="97" height="59"/>
+        <image name="maninMenuBackground" width="375" height="667"/>
         <image name="npBook" width="36" height="39"/>
         <image name="npBox" width="37" height="39"/>
         <image name="npCheckList" width="40" height="32"/>
+        <image name="npMic" width="39" height="39"/>
         <image name="npSettings" width="36" height="36"/>
         <image name="npShare" width="36" height="36"/>
         <image name="npSymptom" width="36" height="39"/>
         <image name="taboo" width="375" height="250"/>
+        <image name="testStart" width="214" height="214"/>
         <image name="tomGreen" width="375" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jic-Ju-jGS"/>
+        <segue reference="vkB-sX-hX1"/>
         <segue reference="ocf-jQ-QeD"/>
-        <segue reference="Ddi-Zx-FO0"/>
-        <segue reference="piz-Pa-vrg"/>
-        <segue reference="5aM-Xd-WF2"/>
+        <segue reference="OBl-vQ-C6x"/>
+        <segue reference="7v2-YF-4iQ"/>
+        <segue reference="PJ3-39-sjb"/>
     </inferredMetricsTieBreakers>
 </document>

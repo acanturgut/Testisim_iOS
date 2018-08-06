@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Plc-y1-cMB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Plc-y1-cMB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSplash" translatesAutoresizingMaskIntoConstraints="NO" id="tq5-U3-ZY9">
                                 <rect key="frame" x="70.5" y="261.5" width="234" height="143"/>
@@ -40,11 +40,11 @@
                             <constraint firstItem="tq5-U3-ZY9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="78c-Ba-J22"/>
                             <constraint firstAttribute="trailing" secondItem="Kbp-23-46s" secondAttribute="trailing" id="Cqm-ik-Z5N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kbp-23-46s" secondAttribute="bottom" constant="38" id="RLc-sH-263"/>
-                            <constraint firstItem="Plc-y1-cMB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TpH-2g-zys"/>
+                            <constraint firstItem="Plc-y1-cMB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="TpH-2g-zys"/>
                             <constraint firstItem="tq5-U3-ZY9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VvD-uU-aTt"/>
                             <constraint firstItem="Kbp-23-46s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cKK-0M-cZU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Plc-y1-cMB" secondAttribute="trailing" id="ieG-Wl-par"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Plc-y1-cMB" secondAttribute="bottom" id="v2C-4C-RJt"/>
+                            <constraint firstAttribute="bottom" secondItem="Plc-y1-cMB" secondAttribute="bottom" id="v2C-4C-RJt"/>
                             <constraint firstItem="Plc-y1-cMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wad-7S-M2c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoundedButton: UIButton {
+@IBDesignable class RoundedButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -26,6 +26,29 @@ class RoundedButton: UIButton {
             layer.borderColor = borderColor?.cgColor
         }
     }
-
-
+    
+    @IBInspectable var topColor: UIColor = UIColor.white
+    @IBInspectable var bottomColor: UIColor = UIColor.white
+    
+    @IBInspectable var didBackGroundGradient: Bool = false {
+        didSet {
+            
+            if (didBackGroundGradient) {
+                
+                let gradientLayer = CAGradientLayer()
+                
+                gradientLayer.frame = self.bounds
+                gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+                gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+                gradientLayer.colors = [self.topColor.cgColor, self.bottomColor.cgColor]
+                
+                self.layer.insertSublayer(gradientLayer, at: 0)
+                
+            }
+        }
+    }
 }
+
+
+
+
