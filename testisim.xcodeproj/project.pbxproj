@@ -21,6 +21,7 @@
 		8F8E6E182110FC2400BA5C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E172110FC2400BA5C1B /* Assets.xcassets */; };
 		8F8E6E1B2110FC2400BA5C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E192110FC2400BA5C1B /* LaunchScreen.storyboard */; };
 		8F8E6E282111074100BA5C1B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E272111074100BA5C1B /* RoundedButton.swift */; };
+		8FC47B92211A3E2000AB2EF9 /* FinishTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC47B91211A3E2000AB2EF9 /* FinishTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8F8E6E1A2110FC2400BA5C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8E6E1C2110FC2400BA5C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F8E6E272111074100BA5C1B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8FC47B91211A3E2000AB2EF9 /* FinishTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTestViewController.swift; sourceTree = "<group>"; };
 		A03B0291EF9E7DA082BC2EAA /* Pods-testisim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testisim.release.xcconfig"; path = "Pods/Target Support Files/Pods-testisim/Pods-testisim.release.xcconfig"; sourceTree = "<group>"; };
 		CD10851412DB55FEA92966B1 /* Pods_testisim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testisim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				8F8E6E0F2110FC2300BA5C1B /* SplashViewController.swift */,
 				8F470BB92116300A009A2389 /* EndTutorialViewController.swift */,
 				8F470BC021165FC6009A2389 /* MainMenuViewController.swift */,
+				8FC47B91211A3E2000AB2EF9 /* FinishTestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				8F470BBD2116318D009A2389 /* UserDefaultsKeys.swift in Sources */,
 				8F470BC121165FC6009A2389 /* MainMenuViewController.swift in Sources */,
 				8F8E6E0E2110FC2300BA5C1B /* AppDelegate.swift in Sources */,
+				8FC47B92211A3E2000AB2EF9 /* FinishTestViewController.swift in Sources */,
 				8F470BB621161227009A2389 /* SegueFromLeft.swift in Sources */,
 				8F8E6E282111074100BA5C1B /* RoundedButton.swift in Sources */,
 			);
