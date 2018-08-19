@@ -11,9 +11,7 @@ import Foundation
 class UserDefaultsKeys {
     
     static var IS_USER_COMPLATE_TUTORIALS = "isUserComplateTutorialsKey"
+    static var USER_TEST_DATA = "userTestData"
     
-    init() {
-       
-    }
-    
+    init() {}
 }

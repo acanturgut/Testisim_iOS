@@ -12,17 +12,11 @@ class EndTutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
     }
-    
     
     @IBAction func continueButtonOnClick(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: UserDefaultsKeys.IS_USER_COMPLATE_TUTORIALS)
         performSegue(withIdentifier: "segueTutorialToMainMenu", sender: self)
-        
     }
     
     override func didReceiveMemoryWarning() {

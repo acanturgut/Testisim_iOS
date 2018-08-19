@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		40BF293893B534E077C7FAE4 /* Pods_testisim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD10851412DB55FEA92966B1 /* Pods_testisim.framework */; };
+		8F30B3622129E47A0006C0D5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30B3612129E47A0006C0D5 /* Test.swift */; };
+		8F30B3642129ED040006C0D5 /* TestisimDateFormaterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30B3632129ED040006C0D5 /* TestisimDateFormaterUtil.swift */; };
+		8F30B3662129F1D10006C0D5 /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30B3652129F1D10006C0D5 /* TestsViewController.swift */; };
+		8F30B3682129F4770006C0D5 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30B3672129F4770006C0D5 /* TestTableViewCell.swift */; };
+		8F30B36A2129FC740006C0D5 /* testiscat.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F30B3692129FC740006C0D5 /* testiscat.scnassets */; };
+		8F30B36C212A01A20006C0D5 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30B36B212A01A20006C0D5 /* AnimationViewController.swift */; };
+		8F30B36E212A26680006C0D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30B36D212A26680006C0D5 /* SettingsViewController.swift */; };
+		8F37876D211B82B300B43EF3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37876C211B82B300B43EF3 /* VideoViewController.swift */; };
 		8F470BB621161227009A2389 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F470BB521161227009A2389 /* SegueFromLeft.swift */; };
 		8F470BB821161232009A2389 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F470BB721161232009A2389 /* SegueFromRight.swift */; };
 		8F470BBA2116300A009A2389 /* EndTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F470BB92116300A009A2389 /* EndTutorialViewController.swift */; };
@@ -26,6 +34,14 @@
 
 /* Begin PBXFileReference section */
 		43CDFBD4506A7E3DBEBEC1A3 /* Pods-testisim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testisim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testisim/Pods-testisim.debug.xcconfig"; sourceTree = "<group>"; };
+		8F30B3612129E47A0006C0D5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		8F30B3632129ED040006C0D5 /* TestisimDateFormaterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestisimDateFormaterUtil.swift; sourceTree = "<group>"; };
+		8F30B3652129F1D10006C0D5 /* TestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
+		8F30B3672129F4770006C0D5 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		8F30B3692129FC740006C0D5 /* testiscat.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = testiscat.scnassets; sourceTree = "<group>"; };
+		8F30B36B212A01A20006C0D5 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		8F30B36D212A26680006C0D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8F37876C211B82B300B43EF3 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		8F470BB521161227009A2389 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		8F470BB721161232009A2389 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		8F470BB92116300A009A2389 /* EndTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTutorialViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +83,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8F30B3602129E4640006C0D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F30B3612129E47A0006C0D5 /* Test.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8F470BB421161203009A2389 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8F470BBC2116318D009A2389 /* UserDefaultsKeys.swift */,
+				8F30B3632129ED040006C0D5 /* TestisimDateFormaterUtil.swift */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -105,6 +130,7 @@
 		8F8E6E0C2110FC2300BA5C1B /* testisim */ = {
 			isa = PBXGroup;
 			children = (
+				8F30B3602129E4640006C0D5 /* Models */,
 				8F470BBB21163146009A2389 /* Singletons */,
 				8F470BB421161203009A2389 /* Transitions */,
 				8F8E6E262110FC5C00BA5C1B /* Storyboards */,
@@ -119,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				8F8E6E0D2110FC2300BA5C1B /* AppDelegate.swift */,
+				8F30B3692129FC740006C0D5 /* testiscat.scnassets */,
 				8F8E6E172110FC2400BA5C1B /* Assets.xcassets */,
 				8F8E6E1C2110FC2400BA5C1B /* Info.plist */,
 				8F8E6E142110FC2300BA5C1B /* testisim.xcdatamodeld */,
@@ -133,6 +160,10 @@
 				8F470BB92116300A009A2389 /* EndTutorialViewController.swift */,
 				8F470BC021165FC6009A2389 /* MainMenuViewController.swift */,
 				8FC47B91211A3E2000AB2EF9 /* FinishTestViewController.swift */,
+				8F37876C211B82B300B43EF3 /* VideoViewController.swift */,
+				8F30B3652129F1D10006C0D5 /* TestsViewController.swift */,
+				8F30B36B212A01A20006C0D5 /* AnimationViewController.swift */,
+				8F30B36D212A26680006C0D5 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +173,7 @@
 			children = (
 				8F8E6E272111074100BA5C1B /* RoundedButton.swift */,
 				8F470BBE21165CA3009A2389 /* RoundedView.swift */,
+				8F30B3672129F4770006C0D5 /* TestTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F30B36A2129FC740006C0D5 /* testiscat.scnassets in Resources */,
 				8F8E6E1B2110FC2400BA5C1B /* LaunchScreen.storyboard in Resources */,
 				8F8E6E182110FC2400BA5C1B /* Assets.xcassets in Resources */,
 				8F8E6E132110FC2300BA5C1B /* Main.storyboard in Resources */,
@@ -257,16 +290,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8E6E162110FC2300BA5C1B /* testisim.xcdatamodeld in Sources */,
+				8F30B36C212A01A20006C0D5 /* AnimationViewController.swift in Sources */,
 				8F470BBA2116300A009A2389 /* EndTutorialViewController.swift in Sources */,
+				8F37876D211B82B300B43EF3 /* VideoViewController.swift in Sources */,
 				8F470BBF21165CA3009A2389 /* RoundedView.swift in Sources */,
 				8F8E6E102110FC2300BA5C1B /* SplashViewController.swift in Sources */,
+				8F30B3682129F4770006C0D5 /* TestTableViewCell.swift in Sources */,
 				8F470BB821161232009A2389 /* SegueFromRight.swift in Sources */,
+				8F30B3622129E47A0006C0D5 /* Test.swift in Sources */,
 				8F470BBD2116318D009A2389 /* UserDefaultsKeys.swift in Sources */,
 				8F470BC121165FC6009A2389 /* MainMenuViewController.swift in Sources */,
+				8F30B3642129ED040006C0D5 /* TestisimDateFormaterUtil.swift in Sources */,
 				8F8E6E0E2110FC2300BA5C1B /* AppDelegate.swift in Sources */,
 				8FC47B92211A3E2000AB2EF9 /* FinishTestViewController.swift in Sources */,
+				8F30B3662129F1D10006C0D5 /* TestsViewController.swift in Sources */,
 				8F470BB621161227009A2389 /* SegueFromLeft.swift in Sources */,
 				8F8E6E282111074100BA5C1B /* RoundedButton.swift in Sources */,
+				8F30B36E212A26680006C0D5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,16 +452,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HWJNCF3Y3;
+				DEVELOPMENT_TEAM = S2RLR856AG;
 				INFOPLIST_FILE = "$(SRCROOT)/testisim/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testissagligi.ios.testisim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testisimteam.testisim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,16 +471,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HWJNCF3Y3;
+				DEVELOPMENT_TEAM = S2RLR856AG;
 				INFOPLIST_FILE = "$(SRCROOT)/testisim/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testissagligi.ios.testisim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testisimteam.testisim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
