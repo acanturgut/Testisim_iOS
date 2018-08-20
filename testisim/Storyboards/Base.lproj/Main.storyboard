@@ -1622,7 +1622,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-w5-8nM">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-w5-8nM">
                                                     <rect key="frame" x="16" y="23.5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="4Mz-HU-1P7"/>
@@ -3224,7 +3224,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <segue reference="ocf-jQ-QeD"/>
         <segue reference="OBl-vQ-C6x"/>
         <segue reference="XFB-wg-hz7"/>
-        <segue reference="fcv-D1-pvN"/>
+        <segue reference="mhu-vk-78Z"/>
         <segue reference="21Y-v8-eg4"/>
         <segue reference="jhC-G4-8fq"/>
         <segue reference="qSy-z9-TF0"/>
