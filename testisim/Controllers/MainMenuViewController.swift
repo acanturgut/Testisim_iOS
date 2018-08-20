@@ -13,9 +13,17 @@ class MainMenuViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    @IBOutlet weak var remainingTimeText: UILabel!
+    
+    @IBOutlet weak var modelViewCanceller: UIView!
+    @IBOutlet weak var voiceControlView: RoundedUIVisualEffectView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        modelViewCanceller.isHidden = true
+        voiceControlView.isHidden = true
+        remainingTimeText.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +34,27 @@ class MainMenuViewController: UIViewController {
         
         let text = "Testisim App Paylaş... Link <a href=\"\">Link</a>"
         
-        // set up activity view controller
         let textToShare = [ text ]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        activityViewController.popoverPresentationController?.sourceView = self.view
         
-        // exclude some activity types from the list (optional)
         activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
         
-        // present the view controller
         self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func cancelModelView(_ sender: Any) {
+        
+        modelViewCanceller.isHidden = true
+        voiceControlView.isHidden = true
+    }
+    @IBAction func onWorkWithActionButtonClicked(_ sender: Any) {
+        voiceControlView.isHidden = false
+        modelViewCanceller.isHidden = false
+    }
+    
+    @IBAction func onStartTestButtonClickedWithVoiceControlled(_ sender: Any) {
+        
+        
     }
 }
