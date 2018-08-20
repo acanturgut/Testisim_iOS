@@ -13,17 +13,27 @@ class MainMenuViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    @IBOutlet weak var remainingTimeText: UILabel!
     
+    @IBOutlet weak var remainingTimeText: UILabel!
     @IBOutlet weak var modelViewCanceller: UIView!
     @IBOutlet weak var voiceControlView: RoundedUIVisualEffectView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         modelViewCanceller.isHidden = true
         voiceControlView.isHidden = true
         remainingTimeText.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated);
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
     override func didReceiveMemoryWarning() {

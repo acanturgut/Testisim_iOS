@@ -1,15 +1,15 @@
 //
-//  EndTutorialViewController.swift
+//  OnTestViewController.swift
 //  testisim
 //
-//  Created by Ahmet Can on 4.08.2018.
+//  Created by Ahmet Can on 20.08.2018.
 //  Copyright © 2018 Testisim. All rights reserved.
 //
 
 import UIKit
 
-class EndTutorialViewController: UIViewController {
-
+class OnTestViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,13 +20,8 @@ class EndTutorialViewController: UIViewController {
         self.navigationItem.titleView = imageView
     }
     
-    @IBAction func continueButtonOnClick(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.IS_USER_COMPLATE_TUTORIALS)
-        performSegue(withIdentifier: "segueTutorialToMainMenu", sender: self)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+        // Dispose of any resources that can be recreated.
     }
 }

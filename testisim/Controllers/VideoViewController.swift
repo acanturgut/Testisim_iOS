@@ -11,19 +11,17 @@ import WebKit
 
 class VideoViewController: UIViewController {
 
-    @IBOutlet weak var videoWebKitView: WKWebView!
-    @IBOutlet var outterBound: UIView!
+    
+    @IBOutlet weak var videoWebView: UIWebView!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        videoWebKitView.configuration.allowsInlineMediaPlayback = true
+        videoWebView.allowsInlineMediaPlayback = true
         
-        
-        
-        //videoWebKitView.allowsInlineMediaPlayback = true
-            self.videoWebKitView.loadHTMLString("<body style='background-color: black; margin:0px;'><iframe width=\"\(self.outterBound.frame.width)\" height=\"\(self.outterBound.frame.height)\" src=\"https://www.youtube.com/embed/V9J7l0eWXSs?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></body>", baseURL: nil)
+            self.videoWebView.loadHTMLString("<body style='background-color: black; margin:0px;'><iframe width=\"\(videoWebView.frame.width)\" height=\"\(videoWebView.frame.height)\" src=\"https://www.youtube.com/embed/V9J7l0eWXSs?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></body>", baseURL: nil)
         
     }
     
