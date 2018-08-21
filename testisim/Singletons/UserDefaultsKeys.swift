@@ -12,6 +12,8 @@ class UserDefaultsKeys {
     
     static var IS_USER_COMPLATE_TUTORIALS = "isUserComplateTutorialsKey"
     static var USER_TEST_DATA = "userTestData"
+    static var NOTIFICATION_COUNT = "notificationCount"
+    static var NOTIFICATION_STATUS = "notificationStatus"
     
     init() {}
 }

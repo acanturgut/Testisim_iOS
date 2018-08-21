@@ -9,19 +9,54 @@
 import UIKit
 import CoreData
 import Firebase
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        FirebaseApp.configure()
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+            if error != nil {
+                print("Request authorization failed!")
+            } else {
+                print("Request authorization succeeded!")
+                
+                let content = UNMutableNotificationContent()
+                content.title = NSString.localizedUserNotificationString(forKey: "Test Zamanı", arguments: nil)
+                content.body = NSString.localizedUserNotificationString(forKey: "Ayarladığın şekilde testis kontrolünü yapmayı unutma", arguments: nil)
+                content.sound = UNNotificationSound.default()
+                content.categoryIdentifier = "notify-testisim"
+                
+                let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 864000, repeats: true)
+                let request = UNNotificationRequest.init(identifier: "notify-testisim", content: content, trigger: trigger)
+                
+                let center = UNUserNotificationCenter.current()
+                center.add(request)
+                
+                UserDefaults.standard.set(1, forKey: UserDefaultsKeys.NOTIFICATION_COUNT)
+                
+                UserDefaults.standard.set(true, forKey: UserDefaultsKeys.NOTIFICATION_STATUS)
+                
+                self.showAlert()
+            }
+        }
         
+        FirebaseApp.configure()
         return true
+    }
+    
+    func showAlert() {
+        let objAlert = UIAlertController(title: "İzin Ver", message: "Ayarladığın şekilde testis kontrolünü yapmak için bildirimlere izin vermelisin.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        objAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        UIApplication.shared.keyWindow?.rootViewController?.present(objAlert, animated: true, completion: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

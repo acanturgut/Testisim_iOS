@@ -1,8 +1,8 @@
 //
-//  FinishTestViewController.swift
+//  OnTestViewController.swift
 //  testisim
 //
-//  Created by Ahmet Can on 7.08.2018.
+//  Created by Ahmet Can on 20.08.2018.
 //  Copyright © 2018 Testisim. All rights reserved.
 //
 
@@ -10,7 +10,9 @@ import UIKit
 import Speech
 import AVFoundation
 
-class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
+class TestInformationViewController: UIViewController, AVSpeechSynthesizerDelegate  {
+    @IBOutlet weak var firstText: UILabel!
+    @IBOutlet weak var secondText: UILabel!
     
     let audioEngine = AVAudioEngine()
     
@@ -21,9 +23,17 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
     var recognitionTask: SFSpeechRecognitionTask?
     
     let synth = AVSpeechSynthesizer()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Toolbar Image
+        
+        let image : UIImage = #imageLiteral(resourceName: "logoHeader")
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
         
         synth.delegate = self as AVSpeechSynthesizerDelegate
         
@@ -33,6 +43,10 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
             Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(speakToMe), userInfo: nil, repeats: false)
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        synth.stopSpeaking(at: AVSpeechBoundary(rawValue: 0)!)
     }
     
     @objc func speakToMe(){
@@ -45,7 +59,7 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
         }else{
             
-            myUtterance = AVSpeechUtterance(string: "Testisleriniz sağllıklı mı? Evet veya Hayır cevabı vererek devam edebilirsiniz?")
+            myUtterance = AVSpeechUtterance(string: "\(String(describing: firstText.text)) \(String(describing: secondText.text)) Testi başlatmak için testi başlat diyebilir yada sonlandır diyerek ana sayfaya dönebilirsin.")
             myUtterance.voice = AVSpeechSynthesisVoice(language: "tr-TR")
             myUtterance.rate = 0.52
             synth.speak(myUtterance)
@@ -54,7 +68,7 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         
-        if(TestisimRunTimeMemory.isInVoiceControlMode) {
+         if(TestisimRunTimeMemory.isInVoiceControlMode) {
             startRecording()
         }
     }
@@ -87,12 +101,12 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
             if let result = result {
-                
+                //self.memorySpeach = result.bestTranscription.formattedString, for: .normal
                 self.memorySpeach = result.bestTranscription.formattedString
                 
                 print("DEBUGGER: --> \(self.memorySpeach)")
                 
-                if(self.memorySpeach.lowercased().contains("evet")){
+                if(self.memorySpeach.lowercased().contains("başlat")){
                     
                     self.audioEngine.stop()
                     
@@ -103,10 +117,9 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
                         try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
                     } catch _ {}
                     
-                    self.saveRecord(status: true)
-                    self.performSegue(withIdentifier: "testEndToYesResult", sender: self)
+                    self.performSegue(withIdentifier: "segueStartToTestOne", sender: self)
                     
-                }else if self.memorySpeach.lowercased().contains("hayır") {
+                }else if self.memorySpeach.lowercased().contains("sonlandır") {
                     
                     self.audioEngine.stop()
                     
@@ -119,8 +132,7 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
                     } catch _ {
                     }
                     
-                    self.saveRecord(status: false)
-                    self.performSegue(withIdentifier: "testEndToNoResult", sender: self)
+                    self.performSegue(withIdentifier: "segueIntrotoMainMenu", sender: self)
                     
                 }
                 
@@ -128,56 +140,5 @@ class FinishTestViewController: UIViewController, AVSpeechSynthesizerDelegate {
                 print(error)
             }
         })
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        synth.stopSpeaking(at: AVSpeechBoundary(rawValue: 0)!)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated);
-        super.viewWillDisappear(animated)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    @IBAction func onNoButtonClicked(_ sender: Any) {
-        saveRecord(status: false)
-        self.performSegue(withIdentifier: "testEndToNoResult", sender: self)
-    }
-    
-    @IBAction func onYesButtonClicked(_ sender: Any) {
-        saveRecord(status: true)
-        self.performSegue(withIdentifier: "testEndToYesResult", sender: self)
-    }
-    
-    func saveRecord(status: Bool) {
-      
-        guard let placesData = UserDefaults.standard.object(forKey: UserDefaultsKeys.USER_TEST_DATA) as? NSData else {
-            print("'Tests' not found in UserDefaults")
-            
-            let placesArray: [Test] = [Test(date: TestisimDateFormaterUtil().getCurrentDate(), status: status)]
-            
-            let placesDataHold = NSKeyedArchiver.archivedData(withRootObject: placesArray)
-            UserDefaults.standard.set(placesDataHold, forKey: UserDefaultsKeys.USER_TEST_DATA)
-            return
-        }
-        
-        guard var placesArray = NSKeyedUnarchiver.unarchiveObject(with: placesData as Data) as? [Test] else {
-            print("Could not unarchive from TestData")
-            return
-        }
-        
-        placesArray.append(Test(date: TestisimDateFormaterUtil().getCurrentDate(), status: status))
-        
-        let placesDataHold = NSKeyedArchiver.archivedData(withRootObject: placesArray)
-        UserDefaults.standard.set(placesDataHold, forKey: UserDefaultsKeys.USER_TEST_DATA)
     }
 }

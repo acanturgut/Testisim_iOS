@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import UserNotifications
 
 class SplashViewController: UIViewController {
     
@@ -19,14 +20,14 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         
         if ( UserDefaults.standard.bool(forKey: UserDefaultsKeys.IS_USER_COMPLATE_TUTORIALS)) {
-            Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(sequeToMainMenu), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(sequeToMainMenu), userInfo: nil, repeats: false)
         } else {
             
             Auth.auth().signInAnonymously() { (authResult, error) in
                 
             }
             
-            Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(segueToTutorial), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(segueToTutorial), userInfo: nil, repeats: false)
         }
     }
     

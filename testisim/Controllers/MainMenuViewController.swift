@@ -52,6 +52,11 @@ class MainMenuViewController: UIViewController {
         
         self.present(activityViewController, animated: true, completion: nil)
     }
+    @IBAction func onStartActionButtonClicked(_ sender: Any) {
+        
+        TestisimRunTimeMemory.isInVoiceControlMode = false
+        performSegue(withIdentifier: "startTestSegue", sender: self)
+    }
     
     @IBAction func cancelModelView(_ sender: Any) {
         
@@ -65,6 +70,11 @@ class MainMenuViewController: UIViewController {
     
     @IBAction func onStartTestButtonClickedWithVoiceControlled(_ sender: Any) {
         
+        TestisimRunTimeMemory.isInVoiceControlMode = true
+        modelViewCanceller.isHidden = true
+        voiceControlView.isHidden = true
+        
+        performSegue(withIdentifier: "startTestSegue", sender: self)
         
     }
 }
