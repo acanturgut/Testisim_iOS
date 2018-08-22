@@ -42,21 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 UserDefaults.standard.set(1, forKey: UserDefaultsKeys.NOTIFICATION_COUNT)
                 
                 UserDefaults.standard.set(true, forKey: UserDefaultsKeys.NOTIFICATION_STATUS)
-                
-                self.showAlert()
             }
         }
         
         FirebaseApp.configure()
         return true
-    }
-    
-    func showAlert() {
-        let objAlert = UIAlertController(title: "İzin Ver", message: "Ayarladığın şekilde testis kontrolünü yapmak için bildirimlere izin vermelisin.", preferredStyle: UIAlertControllerStyle.alert)
-        
-        objAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        
-        UIApplication.shared.keyWindow?.rootViewController?.present(objAlert, animated: true, completion: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

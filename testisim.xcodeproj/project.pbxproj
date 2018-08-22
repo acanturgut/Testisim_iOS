@@ -80,6 +80,7 @@
 		8F8E6E272111074100BA5C1B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8F8FF0F3212C39A5001F03AD /* TestisimRunTimeMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestisimRunTimeMemory.swift; sourceTree = "<group>"; };
 		8FC47B91211A3E2000AB2EF9 /* FinishTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTestViewController.swift; sourceTree = "<group>"; };
+		8FDE0C16212DFB860037FA8A /* testisim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testisim.entitlements; sourceTree = "<group>"; };
 		8FEFD644212B264F00ED1C3D /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		8FEFD646212B276200ED1C3D /* TestInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInformationViewController.swift; sourceTree = "<group>"; };
 		8FEFD648212B823700ED1C3D /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 		8F8E6E0C2110FC2300BA5C1B /* testisim */ = {
 			isa = PBXGroup;
 			children = (
+				8FDE0C16212DFB860037FA8A /* testisim.entitlements */,
 				8F30B3602129E4640006C0D5 /* Models */,
 				8F470BBB21163146009A2389 /* Singletons */,
 				8F470BB421161203009A2389 /* Transitions */,
@@ -268,6 +270,11 @@
 				TargetAttributes = {
 					8F8E6E092110FC2300BA5C1B = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -528,6 +535,7 @@
 			baseConfigurationReference = 43CDFBD4506A7E3DBEBEC1A3 /* Pods-testisim.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testisim/testisim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2RLR856AG;
 				INFOPLIST_FILE = "$(SRCROOT)/testisim/Supporting Files/Info.plist";
@@ -547,6 +555,7 @@
 			baseConfigurationReference = A03B0291EF9E7DA082BC2EAA /* Pods-testisim.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testisim/testisim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2RLR856AG;
 				INFOPLIST_FILE = "$(SRCROOT)/testisim/Supporting Files/Info.plist";
