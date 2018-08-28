@@ -11,22 +11,15 @@ import WebKit
 
 class VideoViewController: UIViewController {
 
-    
     @IBOutlet weak var videoWebView: UIWebView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         videoWebView.allowsInlineMediaPlayback = true
-        
-            self.videoWebView.loadHTMLString("<body style='background-color: black; margin:0px;'><iframe width=\"\(videoWebView.frame.width)\" height=\"\(videoWebView.frame.height)\" src=\"https://www.youtube.com/embed/V9J7l0eWXSs?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></body>", baseURL: nil)
-        
+        self.videoWebView.loadRequest(URLRequest(url: URL(string: "https://www.youtube.com/embed/cYARzDsOJjY")!))
     }
     
-
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
