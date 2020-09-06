@@ -11,13 +11,15 @@ import WebKit
 
 class VideoViewController: UIViewController {
 
-    @IBOutlet weak var videoWebView: UIWebView!
+    @IBOutlet weak var videoWebView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        videoWebView.allowsInlineMediaPlayback = true
-        self.videoWebView.loadRequest(URLRequest(url: URL(string: "https://www.youtube.com/embed/cYARzDsOJjY")!))
+
+       let myURL = URL(string: "https://www.youtube.com/embed/cYARzDsOJjY?playsinline=1")
+        let youtubeRequest = URLRequest(url: myURL!)
+       videoWebView.load(youtubeRequest)
+  
     }
     
     override func didReceiveMemoryWarning() {

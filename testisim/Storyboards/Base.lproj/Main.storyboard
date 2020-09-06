@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agq-PG-iV7">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agq-PG-iV7">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,9 +10,9 @@
         <!--Main Navigation View Controller-->
         <scene sceneID="cbu-Ga-mKJ">
             <objects>
-                <navigationController id="vRT-a6-w2L" customClass="MainNavigationViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="vRT-a6-w2L" customClass="MainNavigationViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2kR-Go-qiG">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,7 +88,7 @@
             <objects>
                 <viewController id="bip-51-Uig" customClass="AgeSelectionViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D6g-ee-biL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="556"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-R2-dih">
@@ -109,7 +105,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-Nj-7PE">
-                                <rect key="frame" x="0.0" y="284" width="320" height="272"/>
+                                <rect key="frame" x="0.0" y="284" width="320" height="292"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-aL-XFK">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="382"/>
@@ -269,14 +265,14 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="emy-Ne-H0u" customClass="MainMenuViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tho-9W-59w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maninMenuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-H3-e0a">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBK-fM-3Sc" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="215" y="365" width="89" height="74"/>
+                                <rect key="frame" x="215" y="314" width="89" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sesle Çalıştır" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-jh-4n8">
                                         <rect key="frame" x="2" y="48" width="85" height="16"/>
@@ -285,7 +281,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npMic" translatesAutoresizingMaskIntoConstraints="NO" id="awc-bS-Q2Y">
-                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="29.5" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="MeO-Hw-Tya"/>
                                             <constraint firstAttribute="height" constant="30" id="nBn-mf-7oJ"/>
@@ -307,7 +303,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-i8-ten" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="116" y="365" width="89" height="74"/>
+                                <rect key="frame" x="115.5" y="314" width="89" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww9-Mo-3e2">
                                         <rect key="frame" x="2" y="48" width="85" height="16"/>
@@ -316,7 +312,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npTv" translatesAutoresizingMaskIntoConstraints="NO" id="DDS-0b-wW5">
-                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="29.5" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="q6x-ZO-XKK"/>
                                             <constraint firstAttribute="height" constant="30" id="tJq-zL-RR4"/>
@@ -338,14 +334,14 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYE-qk-jBQ" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="16" y="447" width="288" height="1"/>
+                                <rect key="frame" x="16" y="396" width="288" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="0.33318661971830987" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Xja-Eh-VFB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-fc-juK" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="116" y="456" width="89" height="3"/>
+                                <rect key="frame" x="115.5" y="405" width="89" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sözlük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwa-6V-z4o">
                                         <rect key="frame" x="5" y="48" width="79" height="16"/>
@@ -354,7 +350,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npBook" translatesAutoresizingMaskIntoConstraints="NO" id="gFe-2y-gxC">
-                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="29.5" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="GKO-iH-rvK"/>
                                             <constraint firstAttribute="height" constant="30" id="Pzu-qA-Gsd"/>
@@ -376,23 +372,23 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoUfak" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-xp-4C1">
-                                <rect key="frame" x="75" y="40" width="170" height="66"/>
+                                <rect key="frame" x="75" y="40" width="170" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="Fbm-nz-geb"/>
                                     <constraint firstAttribute="height" priority="700" constant="66" id="Vw7-bl-HDJ"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEP-Nf-7Bz" customClass="RoundedView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="16" y="114" width="288" height="123"/>
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEP-Nf-7Bz" customClass="RoundedView" customModule="testisim" customModuleProvider="target">
+                                <rect key="frame" x="16" y="63" width="288" height="123"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis Kanseri erken teşhis ile yaklaşık %100 oranında iyileşme sağlanabilir. Testlerinizi aksatmayın, kafanız rahat olsun :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XY4-QM-LXO">
                                         <rect key="frame" x="8" y="8" width="272" height="107"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="0.11919122409326421" green="0.056780147909239735" blue="0.033430225345862222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.99404761904761907" green="0.98809523809523814" blue="1" alpha="0.32696963028169013" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="XY4-QM-LXO" secondAttribute="bottom" constant="8" id="951-Dl-6Ml"/>
                                     <constraint firstItem="XY4-QM-LXO" firstAttribute="top" secondItem="fEP-Nf-7Bz" secondAttribute="top" constant="8" id="Rh4-hh-LCA"/>
@@ -407,13 +403,13 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQJ-nG-FXb" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="48" y="273" width="225" height="56"/>
+                                <rect key="frame" x="47.5" y="222" width="225" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="S66-Vb-oke"/>
                                     <constraint firstAttribute="height" constant="56" id="eTc-gk-kff"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Teste Başla &gt;">
+                                <state key="normal" title="Teste Başla">
                                     <color key="titleColor" red="0.65490196078431373" green="0.45490196078431372" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -434,7 +430,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJC-qo-3ob" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="16" y="365" width="89" height="74"/>
+                                <rect key="frame" x="16" y="314" width="89" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3B  Görsel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBS-Ln-aCL">
                                         <rect key="frame" x="5" y="48" width="79" height="16"/>
@@ -443,7 +439,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npBox" translatesAutoresizingMaskIntoConstraints="NO" id="WjB-oJ-kBo">
-                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="29.5" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="3HJ-rt-RTj"/>
                                             <constraint firstAttribute="width" constant="30" id="gJK-2z-9jn"/>
@@ -466,7 +462,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-nr-Wuk" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="16" y="385" width="89" height="74"/>
+                                <rect key="frame" x="16" y="405" width="89" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belirtileri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-SP-9Kf">
                                         <rect key="frame" x="2" y="48" width="85" height="16"/>
@@ -475,7 +471,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npSymptom" translatesAutoresizingMaskIntoConstraints="NO" id="5aB-6x-dx7">
-                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="29.5" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="0vW-1X-MhK"/>
                                             <constraint firstAttribute="height" constant="30" id="wyu-Oy-ikO"/>
@@ -497,7 +493,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir sonraki teste X gün kaldı." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-cT-j13">
-                                <rect key="frame" x="16" y="467" width="288" height="21"/>
+                                <rect key="frame" x="16" y="487" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="bbx-k9-Yz6"/>
                                 </constraints>
@@ -506,7 +502,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dS8-yf-UzG" customClass="ClickableUIView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="215" y="385" width="89" height="74"/>
+                                <rect key="frame" x="215" y="405" width="89" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM1-sG-Lsg">
                                         <rect key="frame" x="4" y="48" width="81" height="16"/>
@@ -515,7 +511,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="npCheckList" translatesAutoresizingMaskIntoConstraints="NO" id="pNJ-05-wOe">
-                                        <rect key="frame" x="29" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="29.5" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="8ND-b2-uzA"/>
                                             <constraint firstAttribute="width" constant="30" id="bnK-Ch-W0m"/>
@@ -559,14 +555,14 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlM-d4-7KL">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.32022997359154931" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="6og-0F-Y3W" appends="YES" id="KJK-JH-lDa"/>
                                 </connections>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sri-zM-dUT" customClass="RoundedUIVisualEffectView" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="40" y="152" width="240" height="200"/>
+                                <rect key="frame" x="40" y="162" width="240" height="200"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Uhy-vo-GMh">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="200"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -737,7 +733,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="LMe-DU-9UP" customClass="TestInformationViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccJ-vM-Ls6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste başla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rst-VD-xzF">
@@ -760,14 +756,14 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testStart" translatesAutoresizingMaskIntoConstraints="NO" id="Dej-hG-WFF">
-                                <rect key="frame" x="40" y="162.5" width="240" height="147"/>
+                                <rect key="frame" x="40" y="162.5" width="240" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="F3k-Sv-BBn"/>
                                     <constraint firstAttribute="height" priority="900" constant="128" id="wRa-hW-1eJ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vT-dL-FmM" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="433" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="T7n-W6-BUK"/>
                                     <constraint firstAttribute="height" constant="55" id="vYI-tm-93d"/>
@@ -806,7 +802,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testislerin üzerindeki deri daha da yumuşayacağı ve gevşeyeceği için muayeneyi banyo ya da duş sonrası yapın." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0h-gI-8Kb">
-                                <rect key="frame" x="16" y="333.5" width="288" height="76.5"/>
+                                <rect key="frame" x="16" y="353.5" width="288" height="76.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76.5" id="r5b-us-caw"/>
                                 </constraints>
@@ -852,11 +848,11 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="jHM-Cq-lMs" customClass="FirstTestPageViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jkn-tk-WBX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8bu-Nf-JZC">
-                                <rect key="frame" x="83" y="16" width="155" height="25"/>
+                                <rect key="frame" x="82.5" y="16" width="155" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şişme var mı?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy2-IH-sbu">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="25"/>
@@ -879,7 +875,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3D-oM-RKr" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="433" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Iuk-qA-2UM"/>
                                     <constraint firstAttribute="width" constant="125" id="YtD-Ft-4QP"/>
@@ -918,7 +914,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mümkünse ayna karşısında durun ve testislerde herhangi bir şişme olup olmadığını kontrol edin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZP-SN-ztG">
-                                <rect key="frame" x="16" y="308.5" width="288" height="84.5"/>
+                                <rect key="frame" x="16" y="308" width="288" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="900" constant="118" id="3EG-uP-8YV"/>
                                 </constraints>
@@ -958,13 +954,13 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <!--Finish Test View Controller-->
         <scene sceneID="Tu6-wT-k53">
             <objects>
-                <viewController id="aDf-Mf-Fb9" customClass="FinishTestViewController" customModule="testisim" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="aDf-Mf-Fb9" customClass="FinishTestViewController" customModule="testisim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C3A-df-iON">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nf7-EP-LID">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testislerim sağlıklı mı?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anK-Po-g2W">
                                 <rect key="frame" x="16" y="60" width="288" height="119.5"/>
@@ -973,7 +969,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal dışı oluşumlar farkettiğinizde vakit geçirmeden doktorunuza başvurun." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-AY-qzb">
-                                <rect key="frame" x="16" y="454.5" width="288" height="33.5"/>
+                                <rect key="frame" x="16" y="474.5" width="288" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -982,7 +978,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <rect key="frame" x="16" y="214" width="288" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-TQ-CUT" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="8" width="135" height="55"/>
+                                        <rect key="frame" x="0.0" y="7.5" width="135" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="CSt-g7-3dw"/>
                                             <constraint firstAttribute="width" constant="135" id="DAU-hn-9EN"/>
@@ -1014,7 +1010,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzD-eS-GLh" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                        <rect key="frame" x="153" y="8" width="135" height="55"/>
+                                        <rect key="frame" x="153" y="7.5" width="135" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="3fs-tl-ER9"/>
                                             <constraint firstAttribute="width" constant="135" id="yl4-S3-Ego"/>
@@ -1087,7 +1083,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <!--View Controller-->
         <scene sceneID="iTa-sU-QaF">
             <objects>
-                <viewController id="8Yr-qp-RNo" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8Yr-qp-RNo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nzs-c4-ay0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1096,7 +1092,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTİ BİTİRDİNİZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTm-5X-kQO">
-                                <rect key="frame" x="93" y="36" width="134.5" height="20"/>
+                                <rect key="frame" x="93" y="16" width="134.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="NQp-TG-gmQ"/>
                                 </constraints>
@@ -1144,14 +1140,14 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yes" translatesAutoresizingMaskIntoConstraints="NO" id="sTc-oD-mce">
-                                <rect key="frame" x="110" y="116" width="100" height="100"/>
+                                <rect key="frame" x="110" y="96" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="OP8-l7-fVN"/>
                                     <constraint firstAttribute="width" constant="100" id="YDa-hb-Vem"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir sonraki testte görüşmek üzere :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-kn-3il">
-                                <rect key="frame" x="20" y="266" width="280" height="43"/>
+                                <rect key="frame" x="20" y="246" width="280" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1181,16 +1177,16 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             </objects>
             <point key="canvasLocation" x="9549" y="-195"/>
         </scene>
-        <!--3D Model-->
+        <!--3B Model-->
         <scene sceneID="yKe-7B-chn">
             <objects>
                 <viewController id="OSU-ld-HNK" customClass="AnimationViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pQz-uL-dUy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" loops="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoQ-BA-rbD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1202,7 +1198,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wZ6-Ac-5IM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="3D Model" id="0pU-Kd-QvP"/>
+                    <navigationItem key="navigationItem" title="3B Model" id="0pU-Kd-QvP"/>
                     <connections>
                         <outlet property="animationScene" destination="KoQ-BA-rbD" id="SaG-qC-NVb"/>
                     </connections>
@@ -1216,7 +1212,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="QGC-0D-xbr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6va-qh-OiH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testis üzerinde ya da içerisinde ağrısız kitle/yumru. " lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeN-Gz-iGr">
@@ -1251,7 +1247,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZw-uZ-R7G" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="16" y="309" width="288" height="55"/>
+                                <rect key="frame" x="16" y="329" width="288" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ex5-PC-TqZ"/>
                                 </constraints>
@@ -1274,7 +1270,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRa-Q3-mVi">
-                                <rect key="frame" x="16" y="398" width="288" height="90"/>
+                                <rect key="frame" x="16" y="418" width="288" height="90"/>
                                 <string key="text">Sadece belirtilere dayalı olarak testis kanseri olduğunuzdan emin olamazsınız. Bu nedenle yukarıdaki belirtilerden sizi rahatsız eden herhangi bir semptom olur ise doktorunuza başvurun.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1345,42 +1341,46 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="6kL-IK-5gb" customClass="VideoViewController" customModule="testisim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nvz-9G-6L7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVY-Sk-VHD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6s-Yc-SWQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dhF-h9-ID1" firstAttribute="bottom" secondItem="wVY-Sk-VHD" secondAttribute="bottom" id="4KQ-C3-Gbf"/>
-                            <constraint firstItem="wVY-Sk-VHD" firstAttribute="top" secondItem="dhF-h9-ID1" secondAttribute="top" id="ARg-B1-ddR"/>
-                            <constraint firstItem="dhF-h9-ID1" firstAttribute="trailing" secondItem="wVY-Sk-VHD" secondAttribute="trailing" id="w3Q-D7-OpG"/>
-                            <constraint firstItem="wVY-Sk-VHD" firstAttribute="leading" secondItem="dhF-h9-ID1" secondAttribute="leading" id="xRJ-sQ-fbl"/>
+                            <constraint firstItem="J6s-Yc-SWQ" firstAttribute="bottom" secondItem="dhF-h9-ID1" secondAttribute="bottom" id="4YV-cU-Cq3"/>
+                            <constraint firstItem="J6s-Yc-SWQ" firstAttribute="trailing" secondItem="dhF-h9-ID1" secondAttribute="trailing" id="Fp5-JN-5y5"/>
+                            <constraint firstItem="J6s-Yc-SWQ" firstAttribute="leading" secondItem="dhF-h9-ID1" secondAttribute="leading" id="HBy-l7-4oY"/>
+                            <constraint firstItem="J6s-Yc-SWQ" firstAttribute="top" secondItem="dhF-h9-ID1" secondAttribute="top" id="mWy-WS-d4c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dhF-h9-ID1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Video" id="iIq-ib-s99"/>
                     <connections>
-                        <outlet property="videoWebView" destination="wVY-Sk-VHD" id="IsB-0j-vAy"/>
+                        <outlet property="videoWebView" destination="J6s-Yc-SWQ" id="F5G-NY-cbQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9f-ZS-T9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5164" y="1781"/>
+            <point key="canvasLocation" x="5163.75" y="1780.9859154929577"/>
         </scene>
         <!--Sözlük-->
         <scene sceneID="Amx-Hb-baw">
             <objects>
                 <viewController id="K7O-m8-FUa" customClass="DictionaryViewController" customModule="testisim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eSS-ng-v9u">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-9O-hE2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Sözlükte Ara" id="HC3-ke-S6A">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1393,7 +1393,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                         <rect key="frame" x="0.0" y="72" width="320" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FUR-un-Yac" id="P00-Of-H0O">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="204.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-mB-aaO">
@@ -1403,7 +1403,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fw-GA-aab">
-                                                    <rect key="frame" x="31" y="52" width="258" height="132.5"/>
+                                                    <rect key="frame" x="31" y="52" width="258" height="133"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1430,7 +1430,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sjB-CJ-lvc">
-                                <rect key="frame" x="150" y="242" width="20" height="20"/>
+                                <rect key="frame" x="150" y="252" width="20" height="20"/>
                                 <color key="color" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -1461,18 +1461,18 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="PnO-LO-vts" customClass="TestsViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x0K-FH-KqS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-Ms-JB2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="testTableCell" rowHeight="77" id="8BA-0K-HWZ" customClass="TestTableViewCell" customModule="testisim">
                                         <rect key="frame" x="0.0" y="28" width="320" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8BA-0K-HWZ" id="ccA-TD-Qx9">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-w5-8nM">
@@ -1533,9 +1533,9 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <!--Main Navigation View Controller-->
         <scene sceneID="vnz-zy-J43">
             <objects>
-                <navigationController storyboardIdentifier="MainMenuViewController" id="nvx-is-C8J" customClass="MainNavigationViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainMenuViewController" modalPresentationStyle="fullScreen" id="nvx-is-C8J" customClass="MainNavigationViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="back" id="jic-gY-2EJ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1556,7 +1556,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="RO5-6o-bYz" customClass="SettingsViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KGj-34-68c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hatırlatma Bildirimleri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0S-Ud-lmL">
@@ -1630,7 +1630,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <rect key="frame" x="16" y="223" width="288" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emeği Geçenler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awv-Gm-Tcd">
-                                        <rect key="frame" x="0.0" y="24" width="121" height="21"/>
+                                        <rect key="frame" x="0.0" y="23.5" width="121" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1655,7 +1655,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5q-ov-qNv">
-                                <rect key="frame" x="190" y="459" width="114" height="29"/>
+                                <rect key="frame" x="190" y="479" width="114" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Sözleşmeyi oku &gt;">
                                     <color key="titleColor" red="0.65490196079999996" green="0.4549019608" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1723,13 +1723,22 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="gIN-Lo-0Uz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Dg-np-8YC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-WN-aFk">
-                                <rect key="frame" x="16" y="17" width="288" height="487"/>
+                                <rect key="frame" x="16" y="17" width="288" height="507"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Emeği Geçenler:
+
+Dr. Öğr. Üyesi Prof. Kader Tekkaş Kerman (Yürütücü)
+Prof. Dr. Ayşe Beşer (Araştırmacı)
+Doç. Dr. Öznur Özkasap (Araştırmacı)
+Dr. Seyhan Uçar (Araştırmacı)
+Ahmet Can Turgut (Mobil Uygulama Geliştiricisi/yazılımcısı)
+Selçuk Albayrak (Mobil Uygulama Geliştiricisi/yazılımcısı)
+Prof. Dr. Tarık Esen (Danışman)
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1764,13 +1773,49 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="1Cc-s1-k5M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URT-1y-qhD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="W37-nH-4ji">
-                                <rect key="frame" x="16" y="17" width="288" height="487"/>
+                                <rect key="frame" x="16" y="17" width="288" height="507"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">TARAFLAR
+MADDE 1.
+1.1.
+Unvan            : Testisim App 
+1.2 [Kullanıcı bilgileri, Kullanıcı Bilgi Formunda yer almaktadır.]
+1.3 Testisim ile Kullanıcı bundan böyle beraber kullanıldıklarında “Taraflar”, ayrı ayrı kullanıldıklarında “Taraf” olarak anılacaktırlar.
+SÖZLEŞMENİN KONUSU
+MADDE 2.
+İşbu Mobil Uygulama Kullanıcı Sözleşmesi (bundan böyle “Sözleşme” olarak anılacaktır.), Testisim bünyesinde yer alan Tarafların hak ve yükümlülüklerini düzenlemektedir.
+UYGULAMANIN AMACI
+MADDE 3.
+Uygulama’nın geliştirilme ve Kullanıcı’ya verilecek hizmetin amacı, özellikle 15-35 yaş arası genç erkekleri etkileyen testis kanseri hakkında farkındalığı artırmak ve erkeklerin kendi kendine basit bir testis muayenesi yaparak bu kanser türünün belirtilerini erken dönemde tespit etmelerine olanak sağlamaktır.
+KULLANICININ SORUMLULUKLARI
+MADDE 4.
+4.1 Uygulama’nın konusunu teşkil eden testis kanseri ciddi riskleri barındıran bir hastalıktır. Uygulama aracılığıyla Kullanıcı’ya tarif edilecek olan muayene tam anlamıyla bir tıbbi muayene niteliğinde değildir; bu muayene ancak ve ancak testis kanserinin, sıradan bir kişi tarafından tespit edilebileceği kadar belirgin hale gelmiş belirtilerinin varlığı halinde Kullanıcı’da farkındalık yaratılarak kişinin üroloji uzmanı hekime danışması gerekliliğinin hatırlatılması amacıyla geliştirilmiştir. Bu nedenle Uygulama yardımıyla Kullanıcının yapacağı söz konusu muayene sonucunda testis kanserinin varlığına ya da yokluğuna dair teşhis konulmamaktadır ve KU’nun bu hususta hiçbir sorumluluğu bulunmamaktadır. Dolayısıyla Kullanıcı düzenli olarak üroloji uzmanı hekime başvurarak testis kanseri muayenesi olmalıdır.
+4.2 Kullanıcı Uygulama’yı kullanırken kendisine yöneltilen soru veya taleplere gerçek/doğru bilgilerle yanıt vereceğini, aksi halde ortaya çıkabilecek yanlış sonuçlardan, zararlardan münferiden sorumlu olacağını kabul, beyan ve taahhüt eder.
+UYGULAMANIN KULLANIMI
+MADDE 5.
+Kullanıcı Uygulama’yı mobil cihazına yüklemesinin ve kurmasının ardından, Uygulama’ya erişim sağlamak için adı, soyadı ve Türkiye Cumhuriyeti Kimlik Numarası ile şifresini girmek zorundadır. Kullanıcı, Uygulama’dan faydalanabilmek için Testisim tarafından talep edilen bilgileri tam, doğru ve güncel şekilde sağlayarak Sözleşme’yi onaylaması gerektiğini kabul, beyan ve taahhüt eder. Kullanıcı, sağlayacağı bilgilerde herhangi bir değişiklik olması halinde, söz konusu bilgileri derhal güncelleyecektir. Kullanıcı, işbu maddede yazılı yükümlülüklerine aykırı davranması halinde kendisinin Uygulama’ya erişiminin kesilebileceğini kabul, beyan ve taahhüt eder.
+MÜCBİR SEBEPLER
+MADDE 6.
+Taraflar’ın iradesi dışında gelişen, önceden görülemeyen ve Taraflar’ın Sözleşme ile yüklendiği borçlarını yerine getirmesini engelleyici ve/veya geciktirici hallerin oluşması mücbir sebep hali olarak değerlendirilecektir. (Örneğin; deprem, su baskını, yangın gibi doğal afetler, çalışmayı ve faaliyeti engelleyen hükümet kararları, harp ve seferberlik hali, bulaşıcı hastalıklar vb.) Taraflar mücbir sebep dolayısıyla yükümlülüklerini tam veya zamanında yerine getirememekten dolayı sorumlu tutulmayacaktır. Mücbir sebep halinin 2 (iki) aydan fazla sürmesi halinde Taraflar’dan biri karşı Taraf’a yazılı olarak bildirmek suretiyle sözleşmeyi derhal feshedebilir.
+KİŞİSEL VERİLERİN KULLANIMI ve GİZLİLİK
+MADDE 7.
+7.1 Testisim, Kullanıcı’nın hiçbir kişisel bilgisini, yazılı izni olmaksızın üçüncü kişilerle paylaşmayacaktır. Ancak Testisim, Kullanıcı’nın Uygulama’yı kullanımı sırasında ortaya çıkan verileri istatiksel çalışmalar amacıyla işleyip kullanabilecektir. Kullanıcı 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında Testisim kişisel verilerinin saklanması, işlenmesi ve kullanılması konularında açık rıza verdiğini, bu izin kapsamında kişisel verilerinin ne şekillerde kullanılabileceğinin bilincinde olduğunu kabul, beyan ve taahhüt eder.
+7.2 Testisim, mevzuat uyarınca yetkili makamların talebi halinde Kullanıcı’ya ait kişisel verileri bu makamlarla paylaşabilecektir.
+SÖZLEŞMENİN SAKLANMASI ve ERİŞİM
+MADDE 8.
+Sözleşme KU tarafından 3 (üç) yıl süreyle saklanacaktır. Sözleşme metni Kullanıcı’nın talep etmesi durumunda yukarıda 1. maddede belirtilen adresine gönderilecektir.
+FESİH
+MADDE 9.
+Taraflar, Sözleşme’yi dilediği zaman feshedebileceği gibi Testisim Uygulama’yı dilediği zaman kullanımdan kaldırabilir.
+İMZA
+MADDE 9.
+İşbu sözleşme, 9 (dokuz) ana madde, 3 (üç) sayfa ve 1 (bir) ekten oluşup Katılımcı’nın mobil uygulama üzerinden onaylamasını müteakip başvuru yapıp, mobil uygulama tarafından onay bildiriminin kendisine ulaştırıldığı tarihte yürürlüğe girer.
+EK: Başvuru Formu
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1805,7 +1850,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="o7v-Rk-A6M" customClass="TutorialViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ev-Xq-O7O">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arjen" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-IW-tT5">
@@ -1821,7 +1866,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-Y1-RIV" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="433" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="Ige-Xr-Ml8"/>
                                     <constraint firstAttribute="height" constant="55" id="nnZ-O0-hC7"/>
@@ -1901,7 +1946,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="Xf2-oc-2M6" customClass="TutorialViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z08-Tq-Yx2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="BL5-yQ-qkE">
@@ -1918,7 +1963,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bue-pG-YRI" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="417" width="125" height="55"/>
+                                <rect key="frame" x="163" y="437" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="61F-Aw-7Ul"/>
                                     <constraint firstAttribute="height" constant="55" id="Ksm-X3-Qw2"/>
@@ -1995,7 +2040,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="4kx-YV-JZJ" customClass="TutorialViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Mb-kh-gkw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-tI-vdh">
@@ -2012,7 +2057,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4H-VS-bzg" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="417" width="125" height="55"/>
+                                <rect key="frame" x="163" y="437" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="OD2-Jh-uVF"/>
                                     <constraint firstAttribute="height" constant="55" id="jLK-Fd-HnE"/>
@@ -2095,7 +2140,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="YMF-oB-Wsn" customClass="TutorialViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UOD-uz-tMn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kanser" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-T5-Q8Q">
@@ -2112,7 +2157,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-pl-HBB" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="163" y="417" width="125" height="55"/>
+                                <rect key="frame" x="163" y="437" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="BEp-Ky-4w7"/>
                                     <constraint firstAttribute="height" constant="55" id="NaV-iN-ds0"/>
@@ -2206,23 +2251,23 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="2Yr-ib-cLh" customClass="TutorialViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZM-ix-bOq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armStrong" translatesAutoresizingMaskIntoConstraints="NO" id="0oh-fw-gJr">
-                                <rect key="frame" x="0.0" y="30" width="320" height="260"/>
+                                <rect key="frame" x="0.0" y="10" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="YHX-Lm-kvu"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-OD-u1U">
-                                <rect key="frame" x="16" y="300" width="288" height="16"/>
+                                <rect key="frame" x="16" y="280" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71B-Z0-AdX" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="497" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="UMD-NQ-746"/>
                                     <constraint firstAttribute="width" constant="125" id="cfV-Sd-kjY"/>
@@ -2246,7 +2291,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fCt-wn-pCG">
-                                <rect key="frame" x="16" y="339" width="288" height="94"/>
+                                <rect key="frame" x="16" y="319" width="288" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="Wqf-Cg-QXV"/>
                                 </constraints>
@@ -2302,23 +2347,23 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="Bmj-aD-H6a" customClass="EndTutorialViewController" customModule="testisim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eg6-21-x16">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taboo" translatesAutoresizingMaskIntoConstraints="NO" id="Xpt-TI-DlC">
-                                <rect key="frame" x="0.0" y="30" width="320" height="260"/>
+                                <rect key="frame" x="0.0" y="10" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="wwx-eo-T7P"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-X9-HXI">
-                                <rect key="frame" x="16" y="300" width="288" height="16"/>
+                                <rect key="frame" x="16" y="280" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-Dj-a5P" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="497" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Lpa-MN-tzD"/>
                                     <constraint firstAttribute="width" constant="125" id="mn3-oE-09p"/>
@@ -2343,7 +2388,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-sb-Pcn">
-                                <rect key="frame" x="16" y="339" width="288" height="98"/>
+                                <rect key="frame" x="16" y="319" width="288" height="98"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Jamie ‘Taboo’ Gomez’ e 2014 yılında testis kanseri belirtilerinin ortaya çıkmasının ardından testis kanseri teşhisi koyuldu. Tanı koyulduğunda kanser yayılmış olduğu için cerrahi operasyon ve kemoterapi tedavisi gördü. Şuanda tamamıyla iyileşti.</string>
@@ -2382,23 +2427,23 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="2lL-jy-7gI" customClass="TutorialViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWd-c8-QhF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomGreen" translatesAutoresizingMaskIntoConstraints="NO" id="iNW-SF-dWo">
-                                <rect key="frame" x="0.0" y="30" width="320" height="260"/>
+                                <rect key="frame" x="0.0" y="10" width="320" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="WDE-on-32n"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit: Getty Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-Tg-9Hr">
-                                <rect key="frame" x="16" y="300" width="288" height="16"/>
+                                <rect key="frame" x="16" y="280" width="288" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKP-Za-32v" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="497" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="hBg-Ci-MF5"/>
                                     <constraint firstAttribute="height" constant="55" id="rip-EZ-55g"/>
@@ -2422,7 +2467,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CCy-DO-KO5">
-                                <rect key="frame" x="16" y="339" width="288" height="94"/>
+                                <rect key="frame" x="16" y="319" width="288" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="roF-Wa-jWO"/>
                                 </constraints>
@@ -2467,11 +2512,11 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="Hca-7v-L7c" customClass="SecondTestPageViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pvO-5R-bGy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hO4-px-pY3">
-                                <rect key="frame" x="46.5" y="16" width="228.5" height="25"/>
+                                <rect key="frame" x="46" y="16" width="228.5" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitle / yumru var mı?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQs-rz-sqA">
                                         <rect key="frame" x="0.0" y="0.0" width="228.5" height="25"/>
@@ -2494,7 +2539,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY1-yE-ZIR" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="179" y="433" width="125" height="55"/>
+                                <rect key="frame" x="179" y="453" width="125" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="EVB-ah-xUj"/>
                                     <constraint firstAttribute="width" constant="125" id="rO8-hO-qqp"/>
@@ -2533,7 +2578,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1X2-QF-QwI">
-                                <rect key="frame" x="16" y="288" width="288" height="125"/>
+                                <rect key="frame" x="16" y="288" width="288" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="900" constant="118" id="zDe-fb-cjV"/>
                                 </constraints>
@@ -2598,11 +2643,11 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <objects>
                 <viewController id="lwJ-KS-SLM" customClass="ThirdTestPageViewController" customModule="testisim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ofS-xV-gG2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B8t-sn-yzg">
-                                <rect key="frame" x="36.5" y="16" width="248.5" height="25"/>
+                                <rect key="frame" x="36" y="16" width="248.5" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epididimi kontrol edin." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU8-PZ-uIv">
                                         <rect key="frame" x="0.0" y="0.0" width="248.5" height="25"/>
@@ -2625,7 +2670,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-jD-y2H" customClass="RoundedButton" customModule="testisim" customModuleProvider="target">
-                                <rect key="frame" x="112" y="433" width="192" height="55"/>
+                                <rect key="frame" x="112" y="453" width="192" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="192" id="WeY-KY-3ek"/>
                                     <constraint firstAttribute="height" constant="55" id="l8t-4T-QmP"/>
@@ -2664,7 +2709,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-tj-n7q">
-                                <rect key="frame" x="16" y="288" width="288" height="125"/>
+                                <rect key="frame" x="16" y="288" width="288" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="900" constant="118" id="cu4-G0-3v2"/>
                                 </constraints>
@@ -2721,7 +2766,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <!--View Controller-->
         <scene sceneID="Cdr-lz-ipT">
             <objects>
-                <viewController id="mvQ-Ho-lPy" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="mvQ-Ho-lPy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-c3-bqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2730,7 +2775,7 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTİ BİTİRDİNİZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r0-zB-x8U">
-                                <rect key="frame" x="93" y="36" width="134.5" height="20"/>
+                                <rect key="frame" x="93" y="16" width="134.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="5Lo-ka-9YK"/>
                                 </constraints>
@@ -2778,14 +2823,14 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no" translatesAutoresizingMaskIntoConstraints="NO" id="OH7-b6-UmO">
-                                <rect key="frame" x="110" y="116" width="100" height="100"/>
+                                <rect key="frame" x="110" y="96" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="JDH-JQ-b42"/>
                                     <constraint firstAttribute="height" constant="100" id="qi1-J9-ceh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qG-jM-6O9">
-                                <rect key="frame" x="16" y="266" width="288" height="63.5"/>
+                                <rect key="frame" x="16" y="246" width="288" height="63.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Şüphelendiğiniz bir durum var.  Mutlaka vakit geçirmeden ">
                                         <attributes>
@@ -2836,6 +2881,13 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
             <point key="canvasLocation" x="10362" y="284"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="x9d-79-SXk"/>
+        <segue reference="VcS-uj-xjz"/>
+        <segue reference="Ddi-Zx-FO0"/>
+        <segue reference="YfJ-3s-WWX"/>
+        <segue reference="Mr6-vl-Jwg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arjen" width="375" height="259"/>
         <image name="armStrong" width="375" height="250"/>
@@ -2867,12 +2919,4 @@ Bu uygulama testis kanseri hakkında sizi kısaca bilgilendirmek için yapıldı
         <image name="tomGreen" width="375" height="250"/>
         <image name="yes" width="119" height="119"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vkB-sX-hX1"/>
-        <segue reference="x9d-79-SXk"/>
-        <segue reference="VcS-uj-xjz"/>
-        <segue reference="Ddi-Zx-FO0"/>
-        <segue reference="ZEe-S6-HD3"/>
-        <segue reference="eik-o0-rWh"/>
-    </inferredMetricsTieBreakers>
 </document>
